@@ -1,0 +1,6 @@
+*.config.js
+sidebars
+docs
+node_modules
+static
+.cz-config
