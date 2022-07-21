@@ -46,15 +46,6 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
-  "config": {
-    "commitizen": {
-      "path": "cz-customizable"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": "eslint --fix",
-    "*.{js,jsx,css,scss,md,mdx}": "prettier --write"
-  },
   "browserslist": {
     "production": [
       ">0.5%",
@@ -69,5 +60,14 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "eslint --fix",
+    "*.{js,jsx,css,scss,md,mdx}": "prettier --write"
+  },
 }
