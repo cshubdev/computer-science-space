@@ -49,11 +49,13 @@ const config = {
           editUrl: githubRepoURL,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/scss/custom.scss'),
         },
       }),
     ],
   ],
+
+  plugins: ['docusaurus-plugin-sass'],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -68,9 +70,16 @@ const config = {
           { href: '/docs', label: 'Docs', position: 'left' },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: githubRepoURL,
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: discordURL,
+            position: 'right',
+            className: "header-discord-link",
+            "aria-label": "Official Discord server",
           },
         ],
       },
