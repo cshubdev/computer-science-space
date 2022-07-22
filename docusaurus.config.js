@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
+const twitterURL = 'https://twitter.com/ziarparvaiz_01'
+const discordURL = 'https:discord.gg/bb-tr-kaynak'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -76,19 +78,24 @@ const config = {
         style: 'dark',
         links: [
           {
+            title: "Docs",
+            items: [
+              {
+                label: "Documentation",
+                to: "/docs",
+              },
+            ],
+          },
+          {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: discordURL,
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: twitterURL,
               },
             ],
           },
@@ -101,12 +108,19 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: githubRepoURL,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        logo: {
+          alt: "Fire Ocean",
+          src: "img/logo.svg",
+          href: "https://github.com/Fire-Oceann",
+          width: 160,
+          height: 151,
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Fire Ocean.`,
       },
       prism: {
         theme: lightCodeTheme,
