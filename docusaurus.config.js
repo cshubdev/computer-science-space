@@ -3,21 +3,24 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
+const twitterURL = 'https://twitter.com/ziarparvaiz_01'
+const discordURL = 'https:discord.gg/bb-tr-kaynak'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Bilgisayar Bilimi Türkçe Kaynak',
+  tagline: 'A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.',
+  url: 'https://bb-tr-kaynak.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Fire-Oceann', // Usually your GitHub org/user name.
+  projectName: 'BB-TR-Kaynak', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -33,47 +36,50 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'content/docs',
+          sidebarPath: require.resolve('./sidebars/docs.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: githubRepoURL,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: githubRepoURL,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/scss/custom.scss'),
         },
       }),
     ],
   ],
 
+  plugins: ['docusaurus-plugin-sass'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Bilgisayar Bilimi Türkçe Kaynak',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Bilgisayar Bilimi Türkçe Kaynak',
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          { href: '/docs', label: 'Docs', position: 'left' },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: githubRepoURL,
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
+          {
+            href: discordURL,
+            position: 'right',
+            className: "header-discord-link",
+            "aria-label": "Official Discord server",
           },
         ],
       },
@@ -81,11 +87,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: "Documentation",
+                to: "/docs",
               },
             ],
           },
@@ -93,16 +99,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: discordURL,
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: twitterURL,
               },
             ],
           },
@@ -115,16 +117,35 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: githubRepoURL,
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        logo: {
+          alt: "Fire Ocean",
+          src: "img/logo.svg",
+          href: "https://github.com/Fire-Oceann",
+          width: 160,
+          height: 151,
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Fire Ocean.`,
       },
+      announcementBar: {
+				content:
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/PoetaKodu/CppLangNet/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi düşünün',
+				backgroundColor: '#8f5ee828',
+				textColor: '#fff',
+				isCloseable: false,
+			},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
