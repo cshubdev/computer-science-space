@@ -133,7 +133,7 @@ const config = {
       },
       announcementBar: {
 				content:
-					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/PoetaKodu/CppLangNet/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi düşünün',
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs/Contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi düşünün',
 				backgroundColor: '#8f5ee828',
 				textColor: '#fff',
 				isCloseable: false,
