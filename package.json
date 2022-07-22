@@ -30,6 +30,18 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@docusaurus/module-type-aliases": "2.0.0-rc.1",
@@ -46,18 +58,6 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.5%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "engines": {
     "node": ">=16.14"
   },
@@ -69,5 +69,5 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --fix",
     "*.{js,jsx,css,scss,md,mdx}": "prettier --write"
-  },
+  }
 }
