@@ -22,7 +22,7 @@
 <a href="https://prettier.io/"><img src="https://img.shields.io/badge/code%20style-prettier-%23d971de?style=for-the-badge" alt="Prettier" /></a>
 <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /></a>
 
-[![Netlify Status](XXXX)](XXXX)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2ee8c37e-6b55-44b0-b0e5-ec6663e7ddca/deploy-status)](https://app.netlify.com/sites/bb-tr-kaynak/deploys)
 
 </div>
 
