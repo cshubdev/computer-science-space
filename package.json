@@ -19,7 +19,9 @@
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
     "format:check": "prettier . --ignore-path .gitignore --check",
-    "format:fix": "prettier . --ignore-path .gitignore --write"
+    "format:fix": "prettier . --ignore-path .gitignore --write",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-rc.1",
@@ -45,6 +47,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@docusaurus/module-type-aliases": "2.0.0-rc.1",
+    "all-contributors-cli": "^6.20.0",
     "commitizen": "^4.2.5",
     "commitlint-config-gitmoji": "^2.2.5",
     "cz-customizable": "^6.9.1",

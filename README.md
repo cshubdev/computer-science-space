@@ -13,6 +13,9 @@
 <div align="center">
 <br />
 <a herf="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Fire-Oceann/BB-TR-Kaynak?style=for-the-badge"/></a>
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+<a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"/></a>
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a herf=".URL_"><img alt="Open Source - ❤️" src="https://img.shields.io/badge/Open_Source-❤️-00d59b?style=for-the-badge"/></a>
 <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/Fire-Oceann/BB-TR-Kaynak?color=%23F2625A&style=for-the-badge"/></a>
 
@@ -56,6 +59,20 @@ Together, we can make Fire Ocean | Bilgisayar Bilimi Türkçe Kaynak better!
 First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
 
 Please read [our contribution guidelines ](./CONTRIBUTING.md) for details on our [code of conduct](./CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
 ## Versioning
 
