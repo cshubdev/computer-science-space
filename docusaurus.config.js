@@ -122,9 +122,21 @@ const config = {
         },
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Fire Ocean.`,
       },
+      announcementBar: {
+				content:
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/PoetaKodu/CppLangNet/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi düşünün',
+				backgroundColor: '#8f5ee828',
+				textColor: '#fff',
+				isCloseable: false,
+			},
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
