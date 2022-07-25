@@ -1,0 +1,109 @@
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #549ff4;
+  --ifm-color-primary-dark: #358ef2;
+  --ifm-color-primary-darker: #2685f1;
+  --ifm-color-primary-darkest: #0e6cd8;
+  --ifm-color-primary-light: hsl(212, 88%, 71%);
+  --ifm-color-primary-lighter: #82b9f7;
+  --ifm-color-primary-lightest: #b0d3fa;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --Success: hsl(146, 100%, 41%);
+  --Success--900: hsla(146, 100%, 41%, 0.83);
+  --Success--800: hsla(146, 100%, 41%, 0.668);
+  --Success--700: hsla(146, 100%, 41%, 0.447);
+  --Success--600: hsla(146, 100%, 41%, 0.219);
+  --Info: hsl(261, 75%, 64%);
+  --Info--900: hsla(261, 75%, 64%, 0.811);
+  --Info--800: hsla(261, 75%, 64%, 0.655);
+  --Info--700: hsla(261, 75%, 64%, 0.444);
+  --Info--600: hsla(261, 75%, 64%, 0.227);
+  --Warning: hsl(40, 100%, 50%);
+  --Warning--900: hsla(40, 100%, 50%, 0.849);
+  --Warning--800: hsla(40, 100%, 50%, 0.644);
+  --Warning--700: hsla(40, 100%, 50%, 0.499);
+  --Warning--600: hsla(40, 100%, 50%, 0.222);
+  --Danger: hsl(357, 97%, 62%);
+  --Danger--900: hsla(357, 97%, 62%, 0.833);
+  --Danger--800: hsla(357, 97%, 62%, 0.682);
+  --Danger--700: hsla(357, 97%, 62%, 0.499);
+  --Danger--600: hsla(357, 97%, 62%, 0.216);
+  --Primary: hsl(214, 100%, 59%);
+  --Primary--900: hsla(214, 100%, 59%, 0.844);
+  --Primary--800: hsla(214, 100%, 59%, 0.578);
+  --Primary--700: hsla(214, 100%, 59%, 0.427);
+  --Primary--600: hsla(214, 100%, 59%, 0.275);
+  --FireOcean: hsl(3, 85%, 65%);
+  --FireOcean--900: hsla(3, 85%, 65%, 0.761);
+  --FireOcean--800: hsla(3, 85%, 65%, 0.451);
+  --Dark: hsl(217, 28%, 9%);
+  --Dark--900: hsla(215, 51%, 7%, 0.8);
+  --Gray: hsl(214, 8%, 41%);
+  --White: hsl(0, 0%, 100%);
+
+  --ContainerWidth: 1360px;
+  /* Breakpoints Variables */
+  --mediaBreakpoint-XS: 0;
+  --mediaBreakpoint-SM: 576px;
+  --mediaBreakpoint-MD: 768px;
+  --mediaBreakpoint-LG: 992px;
+  --mediaBreakpoint-XL: 1200px;
+  --mediaBreakpoint-XXL: 1400px;
+
+  --Background-Color: #e1e1e1;
+  --TextColor: rgb(0, 0, 0);
+
+  --Sidebar-BackgroundColor: #e1e1e1;
+  --Sidebar-TextColor: rgb(0, 0, 0);
+  --Sidebar-TextActive-Color: #2685f1;
+  --Sidebar-BorderBottom-Color: #606770;
+
+  /* Navbar Variables +++++  */
+  --Navbar-BackgroundColor: #e1e1e1;
+  --Navbar-TextColor: rgb(0, 0, 0);
+  --Navbar-BorderBottom-Color: #606770;
+  /* Navbar Variables ----- */
+
+  --Footer-BackgroundColor: #e1e1e1;
+  --Footer-TextColor: #000000;
+  --Footer-BorderTop-Color: #606770;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #549ff4;
+  --ifm-color-primary-dark: #358ef2;
+  --ifm-color-primary-darker: #2685f1;
+  --ifm-color-primary-darkest: #0e6cd8;
+  --ifm-color-primary-light: #73b0f6;
+  --ifm-color-primary-lighter: #82b9f7;
+  --ifm-color-primary-lightest: #b0d3fa;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --GrayLa: #606770;
+
+  /* Documentation All Pages Background Variables +++++ */
+  --Background-Color: #050b14;
+  --TextColor: rgb(255, 255, 255);
+  /* Documentation All Pages Background Variables ----- */
+
+  /* Sidebar Variables +++++ */
+  --Sidebar-BackgroundColor: #050b14;
+  --Sidebar-TextColor: rgb(255, 255, 255);
+  --Sidebar-TextActive-Color: #358ef2;
+  --Sidebar-BorderBottom-Color: #606770;
+  /* Sidebar Variables ----- */
+
+  /* Navbar Variables +++++ */
+  --Navbar-BackgroundColor: #050b14;
+  --Navbar-TextColor: rgb(255, 255, 255);
+  --Navbar-BorderBottom-Color: #606770;
+  /* Navbar Variables ----- */
+
+  /* Footer Variables +++++ */
+  --Footer-BackgroundColor: #050b14;
+  --Footer-TextColor: rgb(255, 255, 255);
+  --Footer-BorderTop-Color: #606770;
+  /* Footer Variables ----- */
+}

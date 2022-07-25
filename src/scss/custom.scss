@@ -1,33 +1,95 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+@import url('./helper.scss');
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #549ff4;
-  --ifm-color-primary-dark: #358ef2;
-  --ifm-color-primary-darker: #2685f1;
-  --ifm-color-primary-darkest: #0e6cd8;
-  --ifm-color-primary-light: #73b0f6;
-  --ifm-color-primary-lighter: #82b9f7;
-  --ifm-color-primary-lightest: #b0d3fa;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+// Documentation All Pages Background +++++
+.docs-doc-page,
+.blog-list-page,
+.blog-post-page,
+.blog-tags-list-page,
+.blog-tags-post-list-page,
+.docs-tags-list-page,
+.docs-tags-doc-list-page,
+.mdx-page,
+.docs-wrapper,
+.blog-wrapper,
+.main-wrapper {
+  background-color: var(--Background-Color);
+  color: var(--TextColor);
+}
+// Documentation All Pages Background -----
+
+// Sidebar Class Start +++++
+.theme-doc-sidebar-container {
+  background-color: var(--Sidebar-BackgroundColor);
+  border-right: 1px solid var(--Sidebar-BorderBottom-Color) !important;
+}
+.menu__link {
+  color: var(--Sidebar-TextColor);
+}
+.menu__link--active {
+  color: var(--Sidebar-TextActive-Color);
+  border-left: 4px solid #549ff4;
+}
+// Sidebar Class Start -----
+
+// Navbar Class Start +++++
+.navbar {
+  background-color: var(--Navbar-BackgroundColor);
+  color: var(--Navbar-TextColor);
+  border-bottom: 1px solid var(--Navbar-BorderBottom-Color);
+}
+.navbar-sidebar__brand,
+.navbar-sidebar__item {
+  background-color: var(--Navbar-BackgroundColor);
+}
+.navbar-sidebar__brand {
+  border-bottom: 1px solid var(--Navbar-BorderBottom-Color);
+}
+// Navbar Class End -----
+
+// Footer Class Start +++++
+.footer,
+.footer--dark {
+  background-color: var(--Footer-BackgroundColor);
+  color: var(--Footer-TextColor);
+  border-top: 1px solid var(--Footer-BorderTop-Color);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #549ff4;
-  --ifm-color-primary-dark: #358ef2;
-  --ifm-color-primary-darker: #2685f1;
-  --ifm-color-primary-darkest: #0e6cd8;
-  --ifm-color-primary-light: #73b0f6;
-  --ifm-color-primary-lighter: #82b9f7;
-  --ifm-color-primary-lightest: #b0d3fa;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+.footer__links,
+.footer__title,
+.footer__link-item {
+  color: var(--Footer-TextColor);
 }
+// Footer Class End -----
+
+// ==============================================================
+// Table of Content - Start //
+.table-of-contents__left-border {
+  border-color: var(--GrayLa);
+}
+.table-of-contents__link {
+  padding: 3px;
+}
+.table-of-contents__link--active {
+  background-color: #2e89ff3a;
+  color: white;
+  border-right: 3px solid #0e6cd8;
+}
+// Table of Content - End //
+// ==============================================================
+
+// ==============================================================
+// Pagination Nav Links - Start //
+.pagination-nav__link--prev,
+.pagination-nav__link--next {
+  border-color: #0e6cd83d;
+  transition: 250ms all;
+
+  &:hover {
+    border-color: #0e6cd8;
+  }
+}
+// Pagination Nav Links - End //
+// ==============================================================
 
 // ==============================================================
 // Navbar Icons - Start //
