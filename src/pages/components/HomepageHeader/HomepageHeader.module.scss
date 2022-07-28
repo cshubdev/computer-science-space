@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('../../../scss/helper.scss');
+
+.HomepageHeader {
+  padding-top: 90px;
+  font-family: 'Sora', sans-serif;
+
+  @media (max-width: 768px) {
+    padding-top: 50px;
+  }
+
+  &__Header {
+    max-width: 809px;
+
+    .Title {
+      font-family: 'Sora', sans-serif;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 86px;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+
+      span {
+        color: var(--Gray);
+        &:last-child {
+          color: var(--Info);
+        }
+      }
+
+      @media (max-width: 768px) {
+        font-size: 64px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+
+    .Description {
+      font-family: 'Sora', sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: -0.01em;
+      color: var(--Gray);
+
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .Started_BTN {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    font-size: 800;
+    line-height: 24px;
+    color: var(--White);
+    background-color: var(--Primary);
+    border: 1px solid var(--Primary);
+    padding: 14px 24px;
+    text-decoration: none !important;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 300ms all;
+
+    &:hover {
+      background-color: var(--Primary--600);
+      color: var(--Primary);
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}
