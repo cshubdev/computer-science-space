@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('../../scss/helper.scss');
+
+.Card {
+  font-family: 'Sora', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Dark--900);
+  border: 1px solid var(--Info--600);
+  color: white;
+  min-height: 204px;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none !important;
+  transition: 300ms all;
+
+  &:hover {
+    background-color: var(--Background-Color);
+    border-color: var(--Info);
+  }
+
+  &__Header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Icon {
+      width: 50px;
+      min-width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: var(--Dark);
+      margin-bottom: 24px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+      }
+    }
+
+    .Title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+      color: var(--White);
+      font-size: bold;
+    }
+  }
+
+  &__Body {
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    font-weight: 300;
+    color: var(--Gray);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__Footer {
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
