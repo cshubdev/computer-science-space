@@ -3,6 +3,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import styles from './index.module.scss';
 import HomepageHeader from './components/HomepageHeader';
+import Lessons from './components/Lessons';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,6 +15,7 @@ export default function Home() {
       <div className={styles.BG}>
         <main className={styles.Container}>
           <HomepageHeader />
+          <Lessons />
         </main>
       </div>
     </Layout>
