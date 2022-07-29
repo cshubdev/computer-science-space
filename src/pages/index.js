@@ -5,6 +5,7 @@ import DiscordCard from '@site/src/components/DiscordCard';
 import styles from './index.module.scss';
 import HomepageHeader from './components/HomepageHeader';
 import Lessons from './components/Lessons';
+import Community from './components/Community';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,6 +19,7 @@ export default function Home() {
           <HomepageHeader />
           <Lessons />
           <DiscordCard URL="https:discord.gg/bb-tr-kaynak" />
+          <Community />
         </main>
       </div>
     </Layout>
