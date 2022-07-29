@@ -1,0 +1,78 @@
+@import url('../../scss/helper.scss');
+
+$color1: #5865f2;
+$color2: #dd85f5b6;
+
+.DiscordCard {
+  padding: 20px 40px;
+  background: linear-gradient(350deg, $color2 0%, $color1 100%);
+  color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1197px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__Logo {
+    color: white;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+
+    svg {
+      width: 60px;
+      height: 60px;
+    }
+
+    &::before {
+      content: '';
+      width: 50px;
+      height: 50px;
+      background-color: #23272a1f;
+      position: absolute;
+      border-radius: 50%;
+      bottom: -1px;
+      right: -12px;
+      z-index: -1;
+    }
+
+    @media (max-width: 1197px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__Content {
+    &__Title {
+      font-size: 20px;
+      color: white;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__Description {
+    font-weight: 400;
+  }
+
+  &__btn {
+    display: inline-flex;
+    height: 40px;
+    background-color: #23272a;
+    color: #ffffff;
+    padding: 0 25px;
+    margin-top: 15px;
+    align-items: center;
+    border-radius: 4px;
+    text-decoration: none !important;
+    transition: 250ms all;
+    cursor: pointer;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #23272ac5;
+    }
+  }
+}
