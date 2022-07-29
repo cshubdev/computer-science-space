@@ -1,0 +1,9 @@
+@import url('../../../scss/helper.scss');
+
+.Lessons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-rows: repeat(100px 1fr 1fr);
+  grid-gap: 35px;
+  padding: 76px 0;
+}

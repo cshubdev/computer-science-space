@@ -1,0 +1,18 @@
+@import url('../scss/helper.scss');
+
+.BG {
+  background-image: radial-gradient(
+      at 100% 0%,
+      var(--Info--600) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 100%, var(--Primary--600) 0px, transparent 50%);
+  padding-bottom: 90px;
+}
+
+.Container {
+  background-color: transparent;
+  max-width: var(--ContainerWidth);
+  margin: 0px auto;
+  padding: 0px 15px;
+}

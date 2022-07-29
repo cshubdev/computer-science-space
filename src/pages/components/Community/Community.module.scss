@@ -1,0 +1,44 @@
+@import url('../../../scss/helper.scss');
+
+.Community {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 110px;
+  margin-top: 80px;
+  color: var(--White);
+
+  @media (max-width: 962px) {
+    padding: 0px 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0px 12px;
+  }
+
+  &__Header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 36px;
+
+    h1 {
+      margin: 0px;
+      font-size: 56px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      color: var(--Gray);
+      margin: 18px 0px;
+    }
+  }
+
+  &__Body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-rows: repeat(100px 1fr 1fr);
+    grid-gap: 20px;
+  }
+}

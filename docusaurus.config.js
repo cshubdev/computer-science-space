@@ -4,6 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
+const editURL_githubRepo = 'https://github.com/Fire-Oceann/BB-TR-Kaynak/edit/develop/'
 const twitterURL = 'https://twitter.com/ziarparvaiz_01'
 const discordURL = 'https:discord.gg/bb-tr-kaynak'
 
@@ -55,7 +56,48 @@ const config = {
     ],
   ],
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algorithms',
+        path: 'content/algorithms',
+        routeBasePath: 'algorithms',
+        sidebarPath: require.resolve('./sidebars/algorithms.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'data-structure',
+        path: 'content/data-structure',
+        routeBasePath: 'data-structure',
+        sidebarPath: require.resolve('./sidebars/data-structure.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'git',
+        path: 'content/git',
+        routeBasePath: 'git',
+        sidebarPath: require.resolve('./sidebars/git.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -67,8 +109,11 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { href: '/docs', label: 'Docs', position: 'left' },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/algorithms', label: 'Algoritmalar', position: 'left' },
+          { to: '/data-structure', label: 'Veri yapısı', position: 'left' },
+          { to: '/git', label: 'GIT', position: 'left' },
+          { href: '/docs', label: '❤️ Katkıda Bulunmak', position: 'right' },
+          {to: '/blog', label: 'Makaleler', position: 'right'},
           {
             href: githubRepoURL,
             position: 'right',
@@ -89,10 +134,10 @@ const config = {
           {
             title: "Docs",
             items: [
-              {
-                label: "Documentation",
-                to: "/docs",
-              },
+              { label: "Dokümantasyon",  to: "/docs" },
+              { label: "Algoritmalar",  to: "/algorithms" },
+              { label: "Veri yapısı",  to: "/data-structure" },
+              { label: "GIT",  to: "/git" },
             ],
           },
           {
@@ -112,7 +157,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Makaleler',
                 to: '/blog',
               },
               {

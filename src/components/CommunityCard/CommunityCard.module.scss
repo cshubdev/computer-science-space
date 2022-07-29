@@ -1,0 +1,46 @@
+@import url('../../scss/helper.scss');
+
+.CommunityCard {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  min-height: 140px;
+  border-radius: 14px;
+  background-color: var(--Dark);
+  cursor: pointer;
+  text-decoration: none !important;
+  border: 1px solid var(--Dark);
+  transition: 300ms all;
+
+  &:hover {
+    opacity: 0.5;
+    border-color: var(--Info);
+  }
+
+  &__Header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    svg {
+      width: 25px;
+      min-width: 25px;
+      height: 25px;
+    }
+    h5 {
+      margin: 0px;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--White);
+    }
+  }
+
+  &__Description {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--White);
+  }
+}
