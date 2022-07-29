@@ -4,6 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
+const editURL_githubRepo = 'https://github.com/Fire-Oceann/BB-TR-Kaynak/edit/develop/'
 const twitterURL = 'https://twitter.com/ziarparvaiz_01'
 const discordURL = 'https:discord.gg/bb-tr-kaynak'
 
@@ -55,7 +56,48 @@ const config = {
     ],
   ],
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+    'docusaurus-plugin-sass',
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algorithms',
+        path: 'content/algorithms',
+        routeBasePath: 'algorithms',
+        sidebarPath: require.resolve('./sidebars/algorithms.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'data-structure',
+        path: 'content/data-structure',
+        routeBasePath: 'data-structure',
+        sidebarPath: require.resolve('./sidebars/data-structure.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'git',
+        path: 'content/git',
+        routeBasePath: 'git',
+        sidebarPath: require.resolve('./sidebars/git.js'),
+        editUrl: editURL_githubRepo,
+        editLocalizedFiles: true,
+        showLastUpdateTime: true,
+        showLastUpdateAuthor: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
