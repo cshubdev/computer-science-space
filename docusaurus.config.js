@@ -109,8 +109,11 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { href: '/docs', label: 'Docs', position: 'left' },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/algorithms', label: 'Algoritmalar', position: 'left' },
+          { to: '/data-structure', label: 'Veri yapısı', position: 'left' },
+          { to: '/git', label: 'GIT', position: 'left' },
+          { href: '/docs', label: '❤️ Katkıda Bulunmak', position: 'right' },
+          {to: '/blog', label: 'Makaleler', position: 'right'},
           {
             href: githubRepoURL,
             position: 'right',
@@ -131,10 +134,10 @@ const config = {
           {
             title: "Docs",
             items: [
-              {
-                label: "Documentation",
-                to: "/docs",
-              },
+              { label: "Dokümantasyon",  to: "/docs" },
+              { label: "Algoritmalar",  to: "/algorithms" },
+              { label: "Veri yapısı",  to: "/data-structure" },
+              { label: "GIT",  to: "/git" },
             ],
           },
           {
@@ -154,7 +157,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Makaleler',
                 to: '/blog',
               },
               {
