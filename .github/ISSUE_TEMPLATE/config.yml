@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🤔 Uzun soru veya fikirler?
+    url: https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions
+    about: Uzun biçimli sorular sorun ve fikirleri tartışın.
+  - name: 💬 Discord Topluluk Sohbeti
+    url: https:discord.gg/bb-tr-kaynak
+    about: Hızlı sorular sorun veya `Fire Ocean - TR Source` topluluğu Discord sunucusunda sohbet edin.
