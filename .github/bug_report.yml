@@ -1,0 +1,86 @@
+name: "🐛 Hata raporu"
+title: "[BUG] - SORUNUN_BAŞLIĞINIZI_BURADAN_DEĞİŞTİRİN"
+description: Geliştirmemize yardımcı olacak bir rapor oluşturun
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bir sorunu bildirdiğiniz için teşekkür ederiz :pray:.
+
+        Bu sorun izleyici, [Fire Ocean - Bilgisayar Bilimi Türkçe Kaynak github deposunda](https://github.com/Fire-Oceann/BB-TR-Kaynak) bulunan hataları bildirmek içindir.
+        Bir şeyi nasıl başaracağınızla ilgili bir sorunuz varsa ve zorlanıyorsanız,
+        lütfen aşağıdaki yerlerden birine bir soru gönderin:
+          - Fire Ocean - TR Source [Discussion's tab](https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions)
+          - Fire Ocean - TR Source [Discord channel](https://discord.gg/bYWVWrDkCU)
+
+
+        Yeni bir hata/sorun göndermeden önce, orada zaten yayınlanmış bir çözüm veya soru olup olmadığını görmek için lütfen aşağıdaki bağlantıları kontrol edin.:
+         - Fire Ocean - TR Source'un [Issue sekmesi](https://github.com/Fire-Oceann/BB-TR-Kaynak/issues)
+         - Fire Ocean - TR Source'un [kapatılan sorunlar sekmesi tab](https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=is%3Aissue+is%3Aclosedsed)
+         - Fire Ocean - TR Source'un [Tartışmalar sekmesi](https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions)
+
+        Ne kadar fazla bilgi doldurursanız, topluluk size o kadar iyi yardımcı olabilir.
+  - type: textarea
+    id: description
+    attributes:
+      label: Hatayı açıklayın
+      description: Karşılaştığınız zorluğun net ve kısa bir tanımını yapın.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Hatayı veya Sorunu Yeniden Oluşturma Adımları
+      description: Davranışı yeniden oluşturmak için atmamız gereken adımları açıklayın.
+      placeholder: |
+        1. '...' seçeneğine gidin
+         2. '....' üzerine tıklayın
+         3. '....' seçeneğine ilerleyin
+         4. Hataya bakın
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış
+      description: Ne olmasını beklediğinize dair net ve özlü bir açıklama yapın.
+      placeholder: |
+        Bir kullanıcı olarak ___ davranış bekliyordum ama ___ görüyorum
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots_or_videos
+    attributes:
+      label: Ekran Görüntüleri veya Videolar
+      description: |
+        Varsa, sorununuzu açıklamaya yardımcı olması için ekran görüntüleri veya bir video ekleyin.
+        Desteklenen dosya görüntüsü/dosya türleri ve dosya boyutu sınırları hakkında daha fazla bilgi için
+        lütfen aşağıdaki bağlantıya bakın: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        Video veya resim dosyalarınızı bu düzenleyicinin içine sürükleyebilirsiniz. ↓
+  - type: input
+    id: os
+    attributes:
+      label: İşletim Sistemi Sürümü
+      description: Hangi işletim sistemini kullanıyorsunuz?
+      placeholder: |
+        - OS: [e.g. macOS, Windows, Linux]
+    validations:
+      required: true
+  - type: dropdown
+    id: browser_type
+    attributes:
+      label: Tarayıcı
+      description: Sorunun yeniden oluşturulabileceği (bildiğiniz) tarayıcıları seçin.
+      options:
+        - "Firefox"
+        - "Chrome"
+        - "Opera"
+        - "Opera GX"
+        - "Brave"
+        - "Safari"
+        - "Edge"
+        - "Diğer (ek bağlam ekleyin)"
+    validations:
+      required: true

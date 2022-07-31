@@ -1,0 +1,50 @@
+name: 🚀 Özellik isteği
+title: '[Feature Request] ÖZELLİK_BAŞLIĞINIZI_BURADAN_DEĞİŞTİRİN'
+labels: [feature request]
+description: |
+  💡 'Fire Ocean - TR Source' projesi için bir fikir önerin
+  Örnekler
+    - yeni bir dokuman önermek
+    - mevcut bir dokuman iyileştirin
+    - yeni bir bileşen önermek
+    - ....vb
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bu sorun formu yalnızca özellik istemek içindir! Örneğin, yeni bir bileşen istemek, davranış ... vb.
+        Bir hatayı bildirmek istiyorsanız, lütfen [hata bildirim formunu](https://github.com/Fire-Oceann/fireocean-s/issues/new?assignees=&labels=&template=bug_report.yml) kullanın.
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Özellik isteğiniz bir sorunla mı ilgili? Lütfen tanımla.
+      description: Sorunun ne olduğuna dair net ve özlü bir açıklama. Örnek. Ben her zaman hayal kırıklığına uğradım [...]
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: İstediğiniz çözümü açıklayın
+      description: Ne olmasını istediğinizin açık ve özlü bir açıklaması.
+      placeholder: |
+        Bir kullanıcı olarak ___ davranış bekliyordum ama ___ ...
+
+         Görmek istediğim İdeal Adımlar:
+         1. '...' seçeneğine gidin
+         2. '....' üzerine tıklayın
+         3. ....
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: Düşündüğünüz alternatifleri açıklayın
+      description: Düşündüğünüz tüm alternatif çözümlerin veya özelliklerin açık ve özlü bir açıklaması.
+  - type: textarea
+    attributes:
+      label: Ekran Görüntüleri veya Videolar
+      description: |
+        Varsa, sorununuzu açıklamaya yardımcı olması için ekran görüntüleri veya bir video ekleyin.
+        Desteklenen dosya görüntüsü/dosya türleri ve dosya boyutu sınırları hakkında daha fazla bilgi için 
+        lütfen aşağıdaki bağlantıya bakın: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+      placeholder: |
+        Video veya resim dosyalarınızı bu düzenleyicinin içine sürükleyebilirsiniz ↓
