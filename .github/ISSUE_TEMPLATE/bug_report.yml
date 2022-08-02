@@ -1,7 +1,7 @@
 name: "🐛 Hata raporu"
 title: "[BUG] - SORUNUN_BAŞLIĞINIZI_BURADAN_DEĞİŞTİRİN"
 description: Geliştirmemize yardımcı olacak bir rapor oluşturun
-labels: [bug]
+labels: [🐛 bug]
 body:
   - type: markdown
     attributes:
