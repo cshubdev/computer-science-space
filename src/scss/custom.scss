@@ -148,3 +148,71 @@
 
 // Navbar Icons - End //
 // ==============================================================
+
+// ==============================================================
+// Admonition Style - Start //
+.theme-admonition {
+  color: var(--White);
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 0px;
+
+  &-heading {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &-note {
+    background-color: var(--Info--600);
+    border: 1px solid var(--Info);
+    border-left: 5px solid var(--Info);
+
+    .admonition-heading {
+      color: var(--Info);
+    }
+  }
+
+  &-tip {
+    background-color: var(--Success--600);
+    border: 1px solid var(--Success);
+    border-left: 5px solid var(--Success);
+
+    .admonition-heading {
+      color: var(--Success);
+    }
+  }
+
+  &-info {
+    background-color: var(--Primary--600);
+    border: 1px solid var(--Primary);
+    border-left: 5px solid var(--Primary);
+
+    .admonition-heading {
+      color: var(--Primary);
+    }
+  }
+
+  &-caution {
+    background-color: var(--Warning--600);
+    border: 1px solid var(--Warning);
+    border-left: 5px solid var(--Warning);
+
+    .admonition-heading {
+      color: var(--Warning);
+    }
+  }
+
+  &-danger {
+    background-color: var(--Danger--600);
+    border: 1px solid var(--Danger);
+    border-left: 5px solid var(--Danger);
+
+    .admonition-heading {
+      color: var(--Danger);
+    }
+  }
+}
+
+// Admonition Style - End //
+// ==============================================================
