@@ -216,3 +216,19 @@
 
 // Admonition Style - End //
 // ==============================================================
+
+// ==============================================================
+// Details Element Component - Start //
+.details_node_modules-\@docusaurus-theme-classic-lib-theme-Details-styles-module {
+  background-color: #0e6cd831;
+  border-color: #0e6cd8 !important;
+}
+.collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
+  border-color: #0e6cd8 !important;
+}
+.details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module
+  > summary::before {
+  border-color: transparent transparent transparent #0e6cd8 !important;
+}
+// Details Element Component - End //
+// ==============================================================
