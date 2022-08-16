@@ -1,17 +1,29 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+ziarparvaiz:
+  name: ZIAR Parvaiz
+  title: Maintainer of Fire Ocean - BB TR-Kaynak
+  url: https://github.com/ziarparvaiz
+  image_url: https://github.com/ziarparvaiz.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+burakatak:
+  name: Burak Atak
+  title: Back End Developer
+  url: https://github.com/Burak-Atak
+  image_url: https://github.com/Burak-Atak.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+beyzanurtekinli:
+  name: Beyzanur Tekinli
+  title: Front End Developer
+  url: https://github.com/b-tekinli
+  image_url: https://github.com/b-tekinli.png
+
+talhaAksoy:
+  name: Talha Aksoy
+  title: Front End Developer
+  url: https://github.com/TalhaAksoy
+  image_url: https://github.com/TalhaAksoy.png
+
+yankikucuk:
+  name: Yankı Küçük
+  title: Full Stack Developer
+  url: https://github.com/yankikucuk
+  image_url: https://github.com/yankikucuk.png
