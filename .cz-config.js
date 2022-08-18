@@ -51,10 +51,23 @@ module.exports = {
   ],
 
   scopes: [
-    { name: 'content-docs' },
     { name: 'repo' },
+    { name: 'content-docs' },
     { name: 'ui' },
     { name: 'home' },
+    { name: 'bug' },
+    { name: 'algorithm' },
+    { name: 'data-structure' },
+    { name: 'git' },
+    { name: 'pwa' },
+    { name: 'blog' },
+    { name: 'sidebar' },
+    { name: 'assets' },
+    { name: 'contributor' },
+    { name: 'URL' },
+    { name: 'docusaurus' },
+    { name: 'package' },
+    { name: 'scopes' },
   ],
 
   scopeOverrides: {
