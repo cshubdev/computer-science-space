@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
 const editURL_githubRepo = 'https://github.com/Fire-Oceann/BB-TR-Kaynak/edit/develop/'
 const twitterURL = 'https://twitter.com/ziarparvaiz_01'
-const discordURL = 'https:discord.gg/bb-tr-kaynak'
+const discordURL = 'https://discord.gg/bb-tr-kaynak'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
