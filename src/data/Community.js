@@ -8,7 +8,7 @@ const communityData = [
   {
     title: 'Discord',
     icon: 'Discord',
-    url: 'https:discord.gg/bb-tr-kaynak',
+    url: 'https://discord.gg/bb-tr-kaynak',
     Description:
       'To get involved in the community, ask questions and share tips.',
   },
