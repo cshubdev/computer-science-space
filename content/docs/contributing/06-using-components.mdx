@@ -8,6 +8,74 @@ sidebar_position: 6
 import { FireOceanLoading, LoadingCircle } from '@site/src/components/Loading';
 import NoContentHere from '@site/src/components/MDX/NoContentHere';
 import Image from '@site/src/components/MDX/Image';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Tabs Component
+
+````jsx
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+```mdx-code-block
+    <Tabs>
+    <TabItem value="c" label="C Lang" default>
+    ``````c
+    #include <stdio.h>
+    int main() {
+      printf("Hello, World!");
+      return 0;
+    }
+    ``````mdx-code-block
+    </TabItem>
+    <TabItem value="cpp" label="C++">
+    ```;
+````
+
+```mdx-code-block
+<Tabs>
+<TabItem value="c" label="C Lang" default>
+```
+
+```c
+#include <stdio.h>
+int main() {
+   printf("Hello, World!");
+   return 0;
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="cpp" label="C++">
+```
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="java" label="Java">
+```
+
+```java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
 ## Loading Components
 
