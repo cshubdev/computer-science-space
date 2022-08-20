@@ -11,9 +11,59 @@ import Image from '@site/src/components/MDX/Image';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+## Live Code Editor
+
+````md
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+````
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
 ## Tabs Component
 
-````jsx
+```````jsx
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -30,7 +80,7 @@ import TabItem from '@theme/TabItem';
     </TabItem>
     <TabItem value="cpp" label="C++">
     ```;
-````
+```````
 
 ```mdx-code-block
 <Tabs>
