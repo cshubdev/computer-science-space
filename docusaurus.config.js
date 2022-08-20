@@ -58,6 +58,7 @@ const config = {
 
   plugins: [
     'docusaurus-plugin-sass',
+    '@docusaurus/theme-live-codeblock',
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -102,6 +103,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
+      liveCodeBlock: {
+        playgroundPosition: 'bottom',
+      },
       navbar: {
         title: 'Bilgisayar Bilimi Türkçe Kaynak',
         logo: {
