@@ -8,6 +8,267 @@ sidebar_position: 6
 import { FireOceanLoading, LoadingCircle } from '@site/src/components/Loading';
 import NoContentHere from '@site/src/components/MDX/NoContentHere';
 import Image from '@site/src/components/MDX/Image';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## Line highlighting
+
+### Highlighting with comments
+
+Hangi satırların vurgulanacağını seçmek için `vurgula-sonraki satır`, `vurgula-başla` ve `vurgula-bitiş` ile yorumları kullanabilirsiniz.
+
+````md
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+````
+
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+
+Desteklenen yorum sözdizimi:
+
+| Style      | Syntax                   |
+| ---------- | ------------------------ |
+| C-style    | `/* ... */` and `// ...` |
+| JSX-style  | `{/* ... */}`            |
+| Bash-style | `# ...`                  |
+| HTML-style | `<!-- ... -->`           |
+
+### Highlighting with metadata string
+
+Ayrıca dil meta dizesinde vurgulanan satır aralıklarını da belirtebilirsiniz (dilden sonra bir boşluk bırakın). Birden çok satırı vurgulamak için satır numaralarını virgülle ayırın veya bir satır yığını seçmek için aralık sözdizimini kullanın. Bu özellik, ayrıştırma numarası aralığı kitaplığını kullanır ve proje ayrıntılarında daha fazla sözdizimi bulabilirsiniz.
+
+````md
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+````
+
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+### Line numbering
+
+Dil meta dizesinde `showLineNumbers` tuşunu kullanarak kod bloğunuz için satır numaralandırmayı etkinleştirebilirsiniz (anahtarın hemen önüne boşluk eklemeyi unutmayın).
+
+````md
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+````
+
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+## Code Title
+
+````md
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+````
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+## Live Code Editor
+
+````md
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+````
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+## Tabs Component
+
+```````jsx
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+```mdx-code-block
+    <Tabs>
+    <TabItem value="c" label="C Lang" default>
+    ``````c
+    #include <stdio.h>
+    int main() {
+      printf("Hello, World!");
+      return 0;
+    }
+    ``````mdx-code-block
+    </TabItem>
+    <TabItem value="cpp" label="C++">
+    ```;
+```````
+
+```mdx-code-block
+<Tabs>
+<TabItem value="c" label="C Lang" default>
+```
+
+```c
+#include <stdio.h>
+int main() {
+   printf("Hello, World!");
+   return 0;
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="cpp" label="C++">
+```
+
+```cpp
+#include <iostream>
+
+int main() {
+    std::cout << "Hello World!";
+    return 0;
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="java" label="Java">
+```
+
+```java
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
 
 ## Loading Components
 
@@ -102,6 +363,66 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 ![Slash Introducing](https://user-images.githubusercontent.com/50423368/184932814-2b2c4b80-3530-42a1-8052-f1e922fb3868.png)
 
 </Image>
+
+## Kaynaklar Baglantisi
+
+```md
+:::info Kaynaklar Bağlantısı
+
+<Tabs>
+  <TabItem value="youtube-videos" label="Youtube videoları" default>
+    <ul>
+      <li>
+        <a href="https://youtube.com">Video Title</a>
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="blog-article" label="Blog & Makale">
+    <ul>
+      <li>
+        <a href="https://medium.com">Blog Title</a>
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="questions" label="Sorular">
+    <ul>
+      <li>
+        <a href="https://hackerrank.com">Question Title</a>
+      </li>
+    </ul>
+  </TabItem>
+</Tabs>
+
+:::
+```
+
+:::info Kaynaklar Bağlantısı
+
+<Tabs>
+  <TabItem value="youtube-videos" label="Youtube videoları" default>
+    <ul>
+      <li>
+        <a href="https://youtube.com">Video Title</a>
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="blog-article" label="Blog & Makale">
+    <ul>
+      <li>
+        <a href="https://medium.com">Blog Title</a>
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="questions" label="Sorular">
+    <ul>
+      <li>
+        <a href="https://hackerrank.com">Question Title</a>
+      </li>
+    </ul>
+  </TabItem>
+</Tabs>
+
+:::
 
 ## No Content Here Component
 
