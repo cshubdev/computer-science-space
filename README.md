@@ -74,6 +74,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+## Join The Project Team
+To join the project team, you must fill out [this form](https://2ao4nlhmuns.typeform.com/to/p5MR2HBC).
+
 ## Versioning
 
 We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/BB-TR-Kaynak/tags).
