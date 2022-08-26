@@ -14,7 +14,7 @@
 <br />
 <a herf="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Fire-Oceann/BB-TR-Kaynak?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"/></a>
+<a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a herf=".URL_"><img alt="Open Source - ❤️" src="https://img.shields.io/badge/Open_Source-❤️-00d59b?style=for-the-badge"/></a>
 <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/Fire-Oceann/BB-TR-Kaynak?color=%23F2625A&style=for-the-badge"/></a>
@@ -67,12 +67,21 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ziarparvaiz"><img src="https://avatars.githubusercontent.com/u/50423368?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZIAR Parvaiz</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=author%3Aziarparvaiz" title="Bug reports">🐛</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Code">💻</a> <a href="#design-ziarparvaiz" title="Design">🎨</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Documentation">📖</a> <a href="#ideas-ziarparvaiz" title="Ideas, Planning, & Feedback">🤔</a> </td>
+    <td align="center"><a href="https://github.com/Burak-Atak"><img src="https://avatars.githubusercontent.com/u/71793345?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burak</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Documentation">📖</a></td>
+  </tr>
+</table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Join The Project Team
+To join the project team, you must fill out [this form](https://2ao4nlhmuns.typeform.com/to/p5MR2HBC).
 
 ## Versioning
 
