@@ -67,6 +67,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/ziarparvaiz"><img src="https://avatars.githubusercontent.com/u/50423368?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZIAR Parvaiz</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=author%3Aziarparvaiz" title="Bug reports">🐛</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Code">💻</a> <a href="#design-ziarparvaiz" title="Design">🎨</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Documentation">📖</a> <a href="#ideas-ziarparvaiz" title="Ideas, Planning, & Feedback">🤔</a> </td>
+  </tr>
+</table>
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
