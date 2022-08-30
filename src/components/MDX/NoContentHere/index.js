@@ -16,7 +16,7 @@ function NoContentHere({ URL }) {
         <br />
         bu yanlış mı yoksa belirsiz mi? Bir çekme isteği gönderin.
       </p>
-      <a href={URL} className={styles.BTN}>
+      <a href={URL} target="_blank" className={styles.BTN} rel="noreferrer">
         <PullRequestIcon /> <span>Bir katkıda bulun</span>
       </a>
       <p>
