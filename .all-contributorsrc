@@ -32,6 +32,17 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "b-tekinli",
+      "name": "Beyzanur Tekinli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64313175?v=4",
+      "profile": "https://medium.com/@beyzatekinli",
+      "contributions": [
+        "blog",
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

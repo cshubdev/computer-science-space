@@ -11,7 +11,7 @@ const discordURL = 'https://discord.gg/bb-tr-kaynak'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Bilgisayar Bilimi Türkçe Kaynak',
-  tagline: 'A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.',
+  tagline: 'Meraklılar için bir Bilgisayar Bilimi portalı. İyi yazılmış, iyi düşünülmüş ve iyi açıklanmış bilgisayar bilimi ve programlama makaleleri içerir.',
   url: 'https://bb-tr-kaynak.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -119,7 +119,7 @@ const config = {
         },
         items: [
           { to: '/algorithms', label: 'Algoritmalar', position: 'left' },
-          { to: '/data-structure', label: 'Veri yapısı', position: 'left' },
+          { to: '/data-structure', label: 'Veri Yapıları', position: 'left' },
           { to: '/git', label: 'GIT', position: 'left' },
           { href: '/docs', label: '❤️ Katkıda Bulunmak', position: 'right' },
           {to: '/blog', label: 'Makaleler', position: 'right'},
@@ -141,16 +141,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: "Docs",
+            title: "Dokümanlar",
             items: [
               { label: "Dokümantasyon",  to: "/docs" },
               { label: "Algoritmalar",  to: "/algorithms" },
-              { label: "Veri yapısı",  to: "/data-structure" },
+              { label: "Veri Yapıları",  to: "/data-structure" },
               { label: "GIT",  to: "/git" },
             ],
           },
           {
-            title: 'Community',
+            title: 'Topluluk',
             items: [
               {
                 label: 'Discord',
@@ -163,7 +163,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Daha Fazlası',
             items: [
               {
                 label: 'Makaleler',
@@ -187,7 +187,7 @@ const config = {
       },
       announcementBar: {
 				content:
-					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs/Contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi düşünün',
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs/Contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi unutmayın.',
 				backgroundColor: '#8f5ee828',
 				textColor: '#fff',
 				isCloseable: false,
