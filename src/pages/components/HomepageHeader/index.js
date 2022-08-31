@@ -16,7 +16,7 @@ function HomepageHeader({ children }) {
         <p className={styles.Description}>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className={styles.Started_BTN} to="/docs/">
-            Get Started
+            Başlayın
           </Link>
         </div>
       </div>

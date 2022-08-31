@@ -1,24 +1,24 @@
 const lessonsData = [
   {
-    title: 'Algorithms',
+    title: 'Algoritmalar',
     icon: 'Algorithms',
     url: '/Algorithms',
     Description:
-      'An algorithm is a roadmap for solving a problem or performing a calculation.',
+      'Algoritma, bir problemi çözmek veya bir hesaplama yapmak için kullanılan bir yol haritasıdır.',
   },
   {
-    title: 'Data Structure',
+    title: 'Veri Yapıları',
     icon: 'Data Structure',
     url: '/data-structure',
     Description:
-      'A data structure is a special way of using data to organize, manipulate, retrieve, and store it.',
+      'Veri yapıları, verileri düzenlemek, işlemek, almak ve depolamak için kullanmanın özel bir yoludur.',
   },
   {
     title: 'GIT',
     icon: 'GIT',
     url: '/git',
     Description:
-      'Git is a speed-oriented, distributed version control and source code management system used in software development processes..',
+      'Git, yazılım geliştirme süreçlerinde kullanılan, hız odaklı, dağıtık çalışan bir versiyon kontrol ve kaynak kod yönetim sistemidir.',
   },
 ];
 
