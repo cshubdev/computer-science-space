@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Hata Bildir</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Bir Özellik Ekle</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions">Bir Soru Sor</a>
 </h3>
 
 <div align="center">
@@ -26,16 +26,16 @@
 
 </div>
 
-> A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.
+> Proje Açıklaması
 
-## Prerequisites
+## Ön Koşullar
 
-Make sure you have installed all of the following prerequisites on your development machine:
+Aşağıdaki tüm linkleri bilgisayarınıza yüklediğinizden emin olun:
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Git - [İndirme & Git Kurulumu](https://git-scm.com/downloads). Bu link OSX ve Linux cihazlarında genel olarak zaten kurulu bir şekilde gelir.
+- Node.js - [İndirme & Kurulum](https://nodejs.org/en/download/) Node.js ve npm paket yöneticisi. Eğer Node.js yüklerken bir problemle karşılaşırsanız bunu kullanabilirsiniz:[GitHub Gist](https://gist.github.com/isaacs/579814)
 
-## Installation & Setup
+## Yükleme ve Kurulum
 
 ```bash
 git clone https://github.com/Fire-Oceann/BB-TR-Kaynak.git
@@ -44,49 +44,53 @@ npm install
 npm start
 ```
 
-## Project assistance
+## Proje Yardımı
 
-If you want to say thank you or/and support active development of Fire Ocean | Bilgisayar Bilimi Türkçe Kaynak:
+Fire-Ocean Source için geliştirme yardımında bulunmak istiyorsanız:
 
-- Add a ⭐️ [GitHub Star](https://github.com/Fire-Oceann/BB-TR-Kaynak) to the project.
-- Tweet about the Fire Ocean | Bilgisayar Bilimi Türkçe Kaynak.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+- Projeye bir ⭐️ [GitHub Star](https://github.com/Fire-Oceann/BB-TR-Kaynak) ekleyin.
+- Fire-Ocean Source hakkında bir tweet atın.
+- Kişisel blogunuzda proje hakkında ilginç makaleler yazın. [Dev.to](https://dev.to/), [Medium](https://medium.com/)
 
-Together, we can make Fire Ocean | Bilgisayar Bilimi Türkçe Kaynak better!
+Birlikte, Fire-Ocean Source projesini daha iyi bir hale getirebiliriz!
 
-## 🤝 Contributing
+## 🤝 Katkıda Bulunmak
 
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+İlk olarak, katkıda bulunmaya zaman ayırdığınız için teşekkürler! Katkılar, açık kaynak topluluğunu öğrenmek, ilham vermek ve yaratmak için harika bir şeydir.
 
-Please read [our contribution guidelines ](./CONTRIBUTING.md) for details on our [code of conduct](./CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+Lütfen bizim hakkımızda daha fazla bilgi sahibi olabilmek için ve özellik ekleme isteğiniz olduğunda yönergelerimizi okuyun. [katkı yönergelerimiz](CONTRIBUTING.md) [davranış kuralları](CODE_OF_CONDUCT.md)
 
-## Contributors ✨
+## Katılımcılar ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Bu güzel insanlara teşekkürler ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/ziarparvaiz"><img src="https://avatars.githubusercontent.com/u/50423368?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZIAR Parvaiz</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=author%3Aziarparvaiz" title="Bug reports">🐛</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Code">💻</a> <a href="#design-ziarparvaiz" title="Design">🎨</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Documentation">📖</a> <a href="#ideas-ziarparvaiz" title="Ideas, Planning, & Feedback">🤔</a> </td>
     <td align="center"><a href="https://github.com/Burak-Atak"><img src="https://avatars.githubusercontent.com/u/71793345?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burak</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://medium.com/@beyzatekinli"><img src="https://avatars.githubusercontent.com/u/64313175?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beyzanur Tekinli</b></sub></a><br /><a href="#blog-b-tekinli" title="Blogposts">📝</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Documentation">📖</a></td>
   </tr>
 </table>
+
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Bu proje, tüm katkıda bulunanları takip eder. [katkıda bulunanlar](https://github.com/all-contributors/all-contributors) Katkıda bulunmaya hoş geldiniz!
 
-## Join The Project Team
-To join the project team, you must fill out [this form](https://2ao4nlhmuns.typeform.com/to/p5MR2HBC).
+## Sürümler
 
-## Versioning
+Sürüm oluşturmak için [SemVer](https://semver.org/) kullanıyoruz. Mevcut sürümler için [bu depodaki taglar](https://github.com/Fire-Oceann/BB-TR-Kaynak/tags) adresine bakınız.
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/BB-TR-Kaynak/tags).
+## Lisans
 
-## License
+Bu proje [BB-TR Kaynak](https://github.com/Fire-Oceann) bkz. kapsamında lisanslanmıştır. Ayrıntılar için dosyaya bakınız. [LICENSE](./LICENSE).
 
-This project is licensed under the [Fire Ocean](https://github.com/Fire-Oceann) License - see the [LICENSE](./LICENSE). file for details
+## Proje Ekibine Katılın
+
+Proje ekibine katılmak için [bu formu](https://2ao4nlhmuns.typeform.com/to/p5MR2HBC) doldurmanız gerekir.
