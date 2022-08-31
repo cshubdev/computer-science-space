@@ -26,14 +26,14 @@
 
 </div>
 
-> Proje Açıklaması
+> Meraklılar için bir Bilgisayar Bilimi portalı. İyi yazılmış, iyi düşünülmüş ve iyi açıklanmış bilgisayar bilimi ve programlama makaleleri içerir.
 
 ## Ön Koşullar
 
 Aşağıdaki tüm linkleri bilgisayarınıza yüklediğinizden emin olun:
 
 - Git - [İndirme & Git Kurulumu](https://git-scm.com/downloads). Bu link OSX ve Linux cihazlarında genel olarak zaten kurulu bir şekilde gelir.
-- Node.js - [İndirme & Kurulum](https://nodejs.org/en/download/) Node.js ve npm paket yöneticisi. Eğer Node.js yüklerken bir problemle karşılaşırsanız bunu kullanabilirsiniz:[GitHub Gist](https://gist.github.com/isaacs/579814)
+- Node.js - [İndirme & Kurulum](https://nodejs.org/en/download/) Node.js ve npm paket yöneticisi. Eğer Node.js yüklerken bir problemle karşılaşırsanız bunu kullanabilirsiniz: [GitHub Gist](https://gist.github.com/isaacs/579814)
 
 ## Yükleme ve Kurulum
 
@@ -72,7 +72,6 @@ Bu güzel insanlara teşekkürler ([emoji key](https://allcontributors.org/docs/
   <tr>
     <td align="center"><a href="https://github.com/ziarparvaiz"><img src="https://avatars.githubusercontent.com/u/50423368?v=4?s=100" width="100px;" alt=""/><br /><sub><b>ZIAR Parvaiz</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=author%3Aziarparvaiz" title="Bug reports">🐛</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Code">💻</a> <a href="#design-ziarparvaiz" title="Design">🎨</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=ziarparvaiz" title="Documentation">📖</a> <a href="#ideas-ziarparvaiz" title="Ideas, Planning, & Feedback">🤔</a> </td>
     <td align="center"><a href="https://github.com/Burak-Atak"><img src="https://avatars.githubusercontent.com/u/71793345?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burak</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://medium.com/@beyzatekinli"><img src="https://avatars.githubusercontent.com/u/64313175?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beyzanur Tekinli</b></sub></a><br /><a href="#blog-b-tekinli" title="Blogposts">📝</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Documentation">📖</a></td>
   </tr>
 </table>
 
