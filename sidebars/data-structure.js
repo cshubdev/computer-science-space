@@ -1,3 +1,50 @@
 module.exports = {
-  defaultSidebar: ['indroduction'],
+  defaultSidebar: [
+    'indroduction',
+    'arrays',
+    {
+      type: 'category',
+      label: 'Linked List',
+      items: [
+        'linked-list/singly-linked-list',
+        'linked-list/doubly-linked-list',
+        'linked-list/circular-linked-list',
+        'linked-list/linked-list-vs-array',
+      ],
+    },
+    'stack',
+    {
+      type: 'category',
+      label: 'Queues',
+      items: [
+        'queues/type-of-queues',
+        'queues/circular-queues',
+        'queues/priority-queues',
+      ],
+    },
+    'deque',
+    'sorting-and-searching',
+    'hash-table',
+    'hash-function',
+    'hash-collision',
+    'tree-data-structure',
+    'tree-traversal',
+    'binary-tree',
+    'binary-search-tree',
+    'heap',
+    'fibonacci-heap',
+    {
+      type: 'category',
+      label: 'Graph',
+      items: [
+        'graph/spanning-tree',
+        'graph/strongly-connected-components',
+        'graph/adjacency-matrix',
+        'graph/adjacency-list',
+      ],
+    },
+    'hashing',
+    'matrix',
+    'misc',
+  ],
 };
