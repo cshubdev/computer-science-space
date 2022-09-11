@@ -1,0 +1,85 @@
+---
+title: Semantic Commit Messages
+sidebar_position: 3
+---
+
+# Semantic Commit Messages
+
+Git taahhüt mesajlarımızın nasıl biçimlendirilebileceği konusunda çok kesin kurallarımız var. Bu, proje geçmişine bakarken takip etmesi kolay olan daha okunaklı mesajlara yol açar. Ama aynı zamanda, Fire Ocean - TR Source değişiklik günlüğünü oluşturmak için git commit mesajlarını kullanıyoruz.
+
+### Git Taahhüt Mesaj Formatı
+
+Her taahhüt mesajı bir üst bilgi, bir gövde ve bir alt bilgiden oluşur. Başlık, bir tür, bir kapsam ve bir konu içeren özel bir biçime sahiptir:
+
+```md
+<emoji - type>(<scope>): <subject>
+
+<body>
+<ISSUES CLOSED:> #23
+```
+
+Başlık zorunludur ve başlığın kapsamı isteğe bağlıdır.
+
+Taahhüt mesajının herhangi bir satırı 100 karakterden uzun olamaz! Bu, mesajın GitHub'da ve çeşitli git araçlarında daha kolay okunmasını sağlar.
+
+Altbilgi, varsa bir [soruna yönelik bir kapanış referansı](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) içermelidir.
+
+Örnekler: (daha fazla [örnek](https://github.com/Fire-Oceann/BB-TR-Kaynak/commits/develop))
+
+```md
+📝 docs(changelog): update changelog to beta.5
+```
+
+```md
+📝 docs(repo): short Description of the change
+
+Longer Description of the change (optional)
+
+ISSUES CLOSED: #23
+```
+
+### Revert
+
+Taahhüt önceki bir taahhüdü geri alırsa, `revert:` ile başlamalı ve ardından geri alınan taahhüdün başlığı gelmelidir. Gövdede şunu söylemelidir: `Bu, <hash> taahhüdünü geri alır`, burada hash, geri alınan taahhüdün SHA'sıdır.
+
+### Type
+
+Aşağıdakilerden biri olmalıdır:
+
+- build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
+- ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
+- docs: Documentation only changes
+- feat: A new feature
+- fix: A bug fix
+- perf: A code change that improves performance
+- refactor: A code change that neither fixes a bug nor adds a feature
+- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
+- test: Adding missing tests or correcting existing tests
+
+### Scope
+
+Kapsam bu değişikliğin hangi alanda yapıldığını, değişiklikten projenin hangi bölümünün etkilendiğini belirtiyor. Yazılması zorunlu bir alan değil ama yazıldığında asıl commit mesajını kısa ve net tutmaya yarıyor. Bu yüzden zorunlu bir alanmış gibi ele alınmasında bir zarar yok bence.
+
+Desteklenen kapsamların listesi aşağıdadır:
+
+repo, content-docs, ui, home, bug, algorithm, data-structure, git, pwa, seo, blog, sidebar, assets, contributor, , URL, docusaurus, package, scopes
+
+### Subject
+
+Konu, değişikliğin kısa ve öz bir açıklamasını içerir:
+
+emir kipini, şimdiki zamanı kullanın: "değişim" "değişmedi" veya "değiştirildi"
+ilk harfi büyük yazmayın
+sonunda nokta (.) yok
+
+### Body
+
+Tıpkı konuda olduğu gibi, emir kipi, şimdiki zamanı kullanın: "değişim" "değişmedi" veya "değişiklikler" değil. Vücut, değişim için motivasyonu içermeli ve bunu önceki davranışla karşılaştırmalıdır.
+
+### Footer
+
+Altbilgi, Breaking Changes hakkında herhangi bir bilgi içermelidir ve ayrıca, bunun Kapanış taahhüdünde bulunduğu GitHub sorunlarına başvurulacak yerdir.
+
+Breaking Changes, `BREAKING CHANGE` kelimesiyle başlamalıdır: bir boşluk veya iki yeni satır ile. Taahhüt mesajının geri kalanı daha sonra bunun için kullanılır.
+
+Ayrıntılı bir açıklama bu belgede bulunabilir.
