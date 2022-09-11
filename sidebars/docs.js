@@ -1,21 +1,13 @@
 const sidebars = {
   docs: [
     'introduction',
-    {
-      type: 'category',
-      label: 'Contributing',
-      collapsed: false,
-      link: { type: 'doc', id: 'contributing/index' },
-      items: [
-        'contributing/development',
-        'contributing/semantic-commit-messages',
-        'contributing/folder-structure',
-        'contributing/content-style-guide',
-        'contributing/using-components',
-        'contributing/types-of-contrubution',
-        'contributing/support',
-      ],
-    },
+    'development',
+    'semantic-commit-messages',
+    'folder-structure',
+    'content-style-guide',
+    'using-components',
+    'types-of-contrubution',
+    'support',
     'Code-Of-Conduct',
   ],
 };
