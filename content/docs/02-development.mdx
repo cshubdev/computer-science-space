@@ -1,6 +1,52 @@
 ---
-title: Development
+title: Kurulum
 sidebar_position: 2
 ---
 
-# Development
+# Kurulum
+
+Bu belge, bu uygulamayı yerel bilgisayarınızda çalıştırma işlemini açıklar.
+
+Bu site Node.js tarafından desteklenmektedir! ✨ 🐢 🚀 ✨
+
+macOS, Windows ve Linux ortamlarında çalışır.
+
+Siteyi çalıştırmak için Node.js sürüm 16'ya ihtiyacınız olacak. Node.js'yi yüklemek için nodejs.org'dan "LTS" yükleyicisini indirin. nodenv kullanıyorsanız, Node.js sürümlerini değiştirmeye ilişkin talimatlar için nodenv belgelerini okuyun.
+
+⏳ Kurulum
+
+1. Projeyi öncelikle fork'layın yani kendi alanınıza alın. ([Fork](http://help.github.com/fork-a-repo/)) ve remote'ları yapılandırın:
+
+```bash
+# Repo forkunuzu geçerli dizin üzerine klonlayın
+git clone https://github.com/<your-username>/<repo-name>
+# Klonlanan dizine gidin
+cd <repo-name>
+# Orjinal repoyu "upstream" adlı bir remote called'a atayın
+git remote add upstream https://github.com/<username>/<repo-name>
+# Paketleri kurmak için "npm install" yazınız
+npm install
+```
+
+2. Eğer daha önce fork yaptıysanız, upstream üzerinden en son değişiklikleri alın:
+
+```bash
+git switch develop
+git pull upstream develop
+```
+
+3. Yeni dokuman, feature, fix ve değişiklikleriniz için yeni bir branch oluşturun (ana projenin development branch'ı olan `develop` dışında):
+
+```bash
+git checkout -b <topic-branch-name>
+```
+
+4. Kendi oluşturduğunuz branch'ınız üzerinden fork'unuza push edin:
+
+```bash
+git push origin <topic-branch-name>
+```
+
+5. Net, anlaşılır bir başlık ve açıklama ile pull request açın. [Konu hakkında yardımcı döküman](https://help.github.com/articles/using-pull-requests/)
+
+Açık kaynak projeye nasıl katkıda bulunulabileceğini anlatan daha detaylı bir dokümana [şuradan](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github) ulaşabilirsiniz.

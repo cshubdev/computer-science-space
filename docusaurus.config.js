@@ -187,7 +187,7 @@ const config = {
       },
       announcementBar: {
 				content:
-					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs/Contributing">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi unutmayın.',
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi unutmayın.',
 				backgroundColor: '#8f5ee828',
 				textColor: '#fff',
 				isCloseable: false,
