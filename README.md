@@ -46,13 +46,13 @@ npm start
 
 ## Proje Yardımı
 
-Fire-Ocean Source için geliştirme yardımında bulunmak istiyorsanız:
+`BB TR Kaynak` için geliştirme yardımında bulunmak istiyorsanız:
 
 - Projeye bir ⭐️ [GitHub Star](https://github.com/Fire-Oceann/BB-TR-Kaynak) ekleyin.
-- Fire-Ocean Source hakkında bir tweet atın.
+- `BB TR Kaynak` hakkında bir tweet atın.
 - Kişisel blogunuzda proje hakkında ilginç makaleler yazın. [Dev.to](https://dev.to/), [Medium](https://medium.com/)
 
-Birlikte, Fire-Ocean Source projesini daha iyi bir hale getirebiliriz!
+Birlikte, `BB TR Kaynak` projesini daha iyi bir hale getirebiliriz!
 
 ## 🤝 Katkıda Bulunmak
 
