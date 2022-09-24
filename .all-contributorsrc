@@ -43,6 +43,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "TalhaAksoy",
+      "name": "Talha Aksoy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/56833887?v=4",
+      "profile": "https://github.com/TalhaAksoy",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
