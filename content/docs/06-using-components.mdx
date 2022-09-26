@@ -10,199 +10,7 @@ import NoContentHere from '@site/src/components/MDX/NoContentHere';
 import Image from '@site/src/components/MDX/Image';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
-## Line highlighting
-
-### Highlighting with comments
-
-Hangi satırların vurgulanacağını seçmek için `vurgula-sonraki satır`, `vurgula-başla` ve `vurgula-bitiş` ile yorumları kullanabilirsiniz.
-
-````md
-```js
-function HighlightSomeText(highlight) {
-  if (highlight) {
-    // highlight-next-line
-    return 'This text is highlighted!';
-  }
-
-  return 'Nothing highlighted';
-}
-
-function HighlightMoreText(highlight) {
-  // highlight-start
-  if (highlight) {
-    return 'This range is highlighted!';
-  }
-  // highlight-end
-
-  return 'Nothing highlighted';
-}
-```
-````
-
-```js
-function HighlightSomeText(highlight) {
-  if (highlight) {
-    // highlight-next-line
-    return 'This text is highlighted!';
-  }
-
-  return 'Nothing highlighted';
-}
-
-function HighlightMoreText(highlight) {
-  // highlight-start
-  if (highlight) {
-    return 'This range is highlighted!';
-  }
-  // highlight-end
-
-  return 'Nothing highlighted';
-}
-```
-
-Desteklenen yorum sözdizimi:
-
-| Style      | Syntax                   |
-| ---------- | ------------------------ |
-| C-style    | `/* ... */` and `// ...` |
-| JSX-style  | `{/* ... */}`            |
-| Bash-style | `# ...`                  |
-| HTML-style | `<!-- ... -->`           |
-
-### Highlighting with metadata string
-
-Ayrıca dil meta dizesinde vurgulanan satır aralıklarını da belirtebilirsiniz (dilden sonra bir boşluk bırakın). Birden çok satırı vurgulamak için satır numaralarını virgülle ayırın veya bir satır yığını seçmek için aralık sözdizimini kullanın. Bu özellik, ayrıştırma numarası aralığı kitaplığını kullanır ve proje ayrıntılarında daha fazla sözdizimi bulabilirsiniz.
-
-````md
-```jsx {1,4-6,11}
-import React from 'react';
-
-function MyComponent(props) {
-  if (props.isBar) {
-    return <div>Bar</div>;
-  }
-
-  return <div>Foo</div>;
-}
-
-export default MyComponent;
-```
-````
-
-```jsx {1,4-6,11}
-import React from 'react';
-
-function MyComponent(props) {
-  if (props.isBar) {
-    return <div>Bar</div>;
-  }
-
-  return <div>Foo</div>;
-}
-
-export default MyComponent;
-```
-
-### Line numbering
-
-Dil meta dizesinde `showLineNumbers` tuşunu kullanarak kod bloğunuz için satır numaralandırmayı etkinleştirebilirsiniz (anahtarın hemen önüne boşluk eklemeyi unutmayın).
-
-````md
-```jsx {1,4-6,11} showLineNumbers
-import React from 'react';
-
-function MyComponent(props) {
-  if (props.isBar) {
-    return <div>Bar</div>;
-  }
-
-  return <div>Foo</div>;
-}
-
-export default MyComponent;
-```
-````
-
-```jsx {1,4-6,11} showLineNumbers
-import React from 'react';
-
-function MyComponent(props) {
-  if (props.isBar) {
-    return <div>Bar</div>;
-  }
-
-  return <div>Foo</div>;
-}
-
-export default MyComponent;
-```
-
-## Code Title
-
-````md
-```jsx title="/src/components/HelloCodeTitle.js"
-function HelloCodeTitle(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-```
-````
-
-```jsx title="/src/components/HelloCodeTitle.js"
-function HelloCodeTitle(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-```
-
-## Live Code Editor
-
-````md
-```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
-```
-````
-
-```jsx live
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
-  useEffect(() => {
-    const timerID = setInterval(() => tick(), 1000);
-
-    return function cleanup() {
-      clearInterval(timerID);
-    };
-  });
-
-  function tick() {
-    setDate(new Date());
-  }
-
-  return (
-    <div>
-      <h2>It is {date.toLocaleTimeString()}.</h2>
-    </div>
-  );
-}
-```
+import BrowserPreview from '@site/src/components/BrowserPreview';
 
 ## Tabs Component
 
@@ -224,6 +32,10 @@ import TabItem from '@theme/TabItem';
     <TabItem value="cpp" label="C++">
     ```;
 ```````
+
+```mdx-code-block
+<BrowserPreview>
+```
 
 ```mdx-code-block
 <Tabs>
@@ -270,6 +82,10 @@ class HelloWorld {
 </Tabs>
 ```
 
+```mdx-code-block
+</BrowserPreview>
+```
+
 ## Loading Components
 
 ```js
@@ -279,8 +95,16 @@ import { FireOceanLoading, LoadingCircle } from '@site/src/components/Loading';
 <LoadingCircle />
 ```
 
+```mdx-code-block
+<BrowserPreview>
+```
+
 <FireOceanLoading />
 <LoadingCircle />
+
+```mdx-code-block
+</BrowserPreview>
+```
 
 ---
 
@@ -292,6 +116,10 @@ import { FireOceanLoading, LoadingCircle } from '@site/src/components/Loading';
 Hello World!
 
 :::
+```
+
+```mdx-code-block
+<BrowserPreview>
 ```
 
 :::note Note = Info
@@ -324,6 +152,10 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 
 :::
 
+```mdx-code-block
+</BrowserPreview>
+```
+
 ## Details Element Component
 
 ```jsx
@@ -340,6 +172,10 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 </details>
 ```
 
+```mdx-code-block
+<BrowserPreview>
+```
+
 <details>
   <summary>Toggle me!</summary>
   <div>
@@ -352,10 +188,18 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
   </div>
 </details>
 
+```mdx-code-block
+</BrowserPreview>
+```
+
 ## Image Component
 
 ```jsx
 <Image copyRight="CopyRight">![Image Title](Image URL)</Image>
+```
+
+```mdx-code-block
+<BrowserPreview>
 ```
 
 <Image copyRight="Fire Ocean">
@@ -363,6 +207,10 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 ![Slash Introducing](https://user-images.githubusercontent.com/50423368/184932814-2b2c4b80-3530-42a1-8052-f1e922fb3868.png)
 
 </Image>
+
+```mdx-code-block
+</BrowserPreview>
+```
 
 ## Kaynaklar Baglantisi
 
@@ -396,6 +244,10 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 :::
 ```
 
+```mdx-code-block
+<BrowserPreview>
+```
+
 :::info Kaynaklar Bağlantısı
 
 <Tabs>
@@ -424,6 +276,10 @@ Lorem Ipsum In publishing and graphic design, Lorem ipsum is a placeholder text 
 
 :::
 
+```mdx-code-block
+</BrowserPreview>
+```
+
 ## No Content Here Component
 
 ```jsx
@@ -432,4 +288,245 @@ import NoContentHere from '@site/src/components/MDX/NoContentHere';
 <NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak" />;
 ```
 
+```mdx-code-block
+<BrowserPreview>
+```
+
 <NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak" />
+
+```mdx-code-block
+</BrowserPreview>
+```
+
+## Line highlighting
+
+### Highlighting with comments
+
+Hangi satırların vurgulanacağını seçmek için `vurgula-sonraki satır`, `vurgula-başla` ve `vurgula-bitiş` ile yorumları kullanabilirsiniz.
+
+````md
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+````
+
+```mdx-code-block
+<BrowserPreview>
+```
+
+```js
+function HighlightSomeText(highlight) {
+  if (highlight) {
+    // highlight-next-line
+    return 'This text is highlighted!';
+  }
+
+  return 'Nothing highlighted';
+}
+
+function HighlightMoreText(highlight) {
+  // highlight-start
+  if (highlight) {
+    return 'This range is highlighted!';
+  }
+  // highlight-end
+
+  return 'Nothing highlighted';
+}
+```
+
+```mdx-code-block
+</BrowserPreview>
+```
+
+Desteklenen yorum sözdizimi:
+
+| Style      | Syntax                   |
+| ---------- | ------------------------ |
+| C-style    | `/* ... */` and `// ...` |
+| JSX-style  | `{/* ... */}`            |
+| Bash-style | `# ...`                  |
+| HTML-style | `<!-- ... -->`           |
+
+### Highlighting with metadata string
+
+Ayrıca dil meta dizesinde vurgulanan satır aralıklarını da belirtebilirsiniz (dilden sonra bir boşluk bırakın). Birden çok satırı vurgulamak için satır numaralarını virgülle ayırın veya bir satır yığını seçmek için aralık sözdizimini kullanın. Bu özellik, ayrıştırma numarası aralığı kitaplığını kullanır ve proje ayrıntılarında daha fazla sözdizimi bulabilirsiniz.
+
+````md
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+````
+
+```mdx-code-block
+<BrowserPreview>
+```
+
+```jsx {1,4-6,11}
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+```mdx-code-block
+</BrowserPreview>
+```
+
+### Line numbering
+
+Dil meta dizesinde `showLineNumbers` tuşunu kullanarak kod bloğunuz için satır numaralandırmayı etkinleştirebilirsiniz (anahtarın hemen önüne boşluk eklemeyi unutmayın).
+
+````md
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+````
+
+```mdx-code-block
+<BrowserPreview>
+```
+
+```jsx {1,4-6,11} showLineNumbers
+import React from 'react';
+
+function MyComponent(props) {
+  if (props.isBar) {
+    return <div>Bar</div>;
+  }
+
+  return <div>Foo</div>;
+}
+
+export default MyComponent;
+```
+
+```mdx-code-block
+</BrowserPreview>
+```
+
+## Code Title
+
+````md
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+````
+
+```mdx-code-block
+<BrowserPreview>
+```
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+```mdx-code-block
+</BrowserPreview>
+```
+
+## Live Code Editor
+
+````md
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+````
+
+```mdx-code-block
+<BrowserPreview>
+```
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    const timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+```mdx-code-block
+</BrowserPreview>
+```
