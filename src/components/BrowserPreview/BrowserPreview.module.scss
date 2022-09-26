@@ -1,4 +1,4 @@
-@use '../../scss/' as *;
+@import url('../../scss/helper.scss');
 
 .BrowserPreview {
   border: 3px solid #60677180;
@@ -7,10 +7,10 @@
 
 .BrowserPreviewHeader {
   align-items: center;
-  background: $BgColor;
+  background: var(--Background-Color);
   display: flex;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid $Gray;
+  border-bottom: 1px solid var(--Gray);
 }
 
 .row::after {
@@ -32,7 +32,7 @@
   flex: 1 0;
   margin: 0 1rem 0 0.5rem;
   border-radius: 12.5px;
-  background-color: #6067712c;
+  background-color: var(--Dark--900);
   padding: 5px 15px;
   font: 400 13px Arial, sans-serif;
   user-select: none;
@@ -43,7 +43,7 @@
   margin-top: 4px;
   height: 12px;
   width: 12px;
-  background-color: #bbb;
+  background-color: var(--Info--600);
   border-radius: 50%;
   display: inline-block;
 }
@@ -55,13 +55,13 @@
 .bar {
   width: 17px;
   height: 3px;
-  background-color: #aaa;
+  background-color: var(--Gray);
   margin: 3px 0;
   display: block;
 }
 
 .BrowserPreviewBody {
-  background-color: $BgColor;
+  background-color: var(--Background-Color);
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding: 1rem;
