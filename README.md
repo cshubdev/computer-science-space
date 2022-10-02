@@ -91,7 +91,3 @@ Sürüm oluşturmak için [SemVer](https://semver.org/) kullanıyoruz. Mevcut s�
 ## Lisans
 
 Bu proje [BB-TR Kaynak](https://github.com/Fire-Oceann) bkz. kapsamında lisanslanmıştır. Ayrıntılar için dosyaya bakınız. [LICENSE](./LICENSE).
-
-## Proje Ekibine Katılın
-
-Proje ekibine katılmak için [bu formu](https://2ao4nlhmuns.typeform.com/to/p5MR2HBC) doldurmanız gerekir.
