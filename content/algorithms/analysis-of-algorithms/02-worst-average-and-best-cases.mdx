@@ -14,9 +14,9 @@ import TabItem from '@theme/TabItem';
 
 ## Algoritmaların Karmaşıklık Analizlerinde Popüler Notasyonlar
 
-[Önceki yazımızda](https://bb-tr-kaynak.netlify.app/algorithms/analysis-of-algorithms/asymptotic-analysis) asimptotik analizin algoritma analizinde problemlerle nasıl başa çıktığını tartışmıktık. Şimdi şu konulara göz atalım:
+[Önceki yazımızda](https://bb-tr-kaynak.netlify.app/algorithms/analysis-of-algorithms/asymptotic-analysis) asimptotik analizin algoritma analizinde problemlerle nasıl başa çıktığını tartışmıştık. Şimdi şu konulara göz atalım:
 
-- Asimptotik analizin genel görünümüne
+- Asimptotik analizin genel görünümü
 - Worst case (en kötü durum),
 - Average case (ortalama durum),
 - Best case (en iyi durum)
@@ -31,7 +31,7 @@ Bir algoritmanın zaman karmaşıklığının en iyi durumudur (best case). Big-
 
 ### 👉 Teta Notasyonu (Theta Notation) (θ)
 
-Bir algoritmanın zaman karmaşıklığının ortalama durumudur (average case). Bir fonksiyon Big-O notasyonunun ve Omega notasyonunun ortalama durumudur.
+Bir algoritmanın zaman karmaşıklığının ortalama durumudur (average case). Bir fonksiyonda Big-O notasyonunun ve Omega notasyonunun ortalama durumudur.
 
 ## Bir Algoritmanın Karmaşıklığını (Complexity) Ölçmek
 
@@ -45,13 +45,13 @@ Yukarıda bahsedilen notasyonlara dayanarak, bir algoritmanın üç tane analiz 
 
 Linerar Search algoritması için; bir dizide aranan bir elemanın (x) olmaması en kötü durumdur.
 
-SearchElement() adında bir fonksiyonumuz olsun. SearchElement() fonksiyonu arr[] dizisinde yer alan ve istenen elemanı bulabilmek için dizideki bütün elemanları dolaşır. Aranılanılan elemanın dizide olmaması bize linear search’deki zaman karmaşıklğının en kötü durumunu (worst case) verir. Gösterimi O(n) şeklinderir.
+SearchElement() adında bir fonksiyonumuz olsun. SearchElement() fonksiyonu bir elemanın arr[] dizisinde yer aldığını varsayarak o elemanı bulabilmek için dizideki bütün verileri dolaşır. Aranılanılan elemanın dizide olmaması bize linear search’deki zaman karmaşıklğının en kötü durumunu (worst case) verir. Gösterimi O(n) şeklinderir.
 
 :::
 
 ### 👉 En İyi Durum (Best Case) Analizi (Çok Nadir Kullanılır)
 
-**En iyi durum (best case) analizin**de bir bir algoritmanın çalışma zamanındaki alt sınırı (lower bound) hesaplarız. Bir metodun çok az sayıda yürütülmesindeki nedeni bilmeliyiz. Arama algoritmasında en iyi durum array’de x’in ilk dizinde olmasıdır. En iyi durumda işlemin sayısı sabittir (n’e bağlı değildir). Böylece en iyi durumdaki zaman karmaşıklığının gösterimi Ω(1)’dir.
+**En iyi durum (best case) analizi**nde biz bir algoritmanın çalışma zamanındaki alt sınırı (lower bound) hesaplarız. Bir metodun çok az sayıda yürütülmesindeki nedeni bilmeliyiz. Arama algoritmasında en iyi durum array’de x’in ilk dizinde olmasıdır. En iyi durumda işlemin sayısı sabittir (n’e bağlı değildir). Böylece en iyi durumdaki zaman karmaşıklığının gösterimi Ω(1)’dir.
 
 ### 👉 Ortalama Durum (Average Case) Analizi (Nadiren Kullanılır)
 
@@ -76,11 +76,11 @@ Aşağıdaki karmaşık analiz notasyonları popülerliklerine göre sıralanmı
 
 ### 2-Ortalama Durum Analizi
 
-Ortalama durum analizi pratik ölçümler yapmak için çok kullanışlı değildir. Nadiren kullanılır. Bu analizde bütün olası girişlerin matematiksel dağılımı bilmeliyiz.
+Ortalama durum analizi pratik ölçümler yapmak için çok kullanışlı değildir. Nadiren kullanılır. Bu analizde bütün olası girişlerin matematiksel dağılımını bilmeliyiz.
 
 ### 3-En İyi Durum Analizi
 
-En iyi durum analizinde bir algoritmada en kötü durumda herhangi alt sınır (lower bound) garanti etmek bize bir bilgi sağlamaz. Bir algoritmanın çalışması yıllar alabilir.
+En iyi durum analizinde bir algoritmada herhangi bir alt sınır (lower bound) garanti etmek bize bir bilgi sağlamaz. Bir algoritmanın çalışması yıllar alabilir.
 
 <details>
   <summary>
@@ -99,16 +99,17 @@ En iyi durum analizinde bir algoritmada en kötü durumda herhangi alt sınır (
       </div>
     </details>
     <div>
-      Bazı algoritmalar için bütün durumlar (en kötü, en iyi, ortalama)
-      asimptotik olarak aynıdır. Yani en kötü ve en iyi durum yoktur.{' '}
+      Diğer sıralama algoritmalarının çoğu en kötü ve en iyi durumlara
+      sahiptirler.
     </div>
     <br />
     <details>
       <summary>Örnek</summary>
       <div>
-        Tipik Quik Sort algoritmasındaki en kötüsü giriş dizisi daha önce
-        sıralandığına meydana gelir ve en iyisi pivot elementler her zaman
-        diziyi iki yarıya böler.
+        Tipik bir Quik Sort uygulamasında (köşe elemanı olarak pivot
+        seçildiğinde) en kötü durum; giriş dizisi önceden sıralandığında meydana
+        gelir. En iyi durum ise pivot elementler her zaman diziyi iki yarıya
+        böler.
       </div>
     </details>
     <br />
@@ -321,12 +322,12 @@ Verilen listede bulunmak istenen eleman listenin ortasındaysa bu durum gerçekl
 - Aranacak eleman sonuncu index’te aranmalı
 - Aranacak eleman listede olmamalı
 
-### 2-Bu Örnekte Bir Dizinin Uzunluğunu Alacağız ve Aşağıdaki Durumlarla İlgileneceğiz:
+### 2-Aşağıdaki Örnekte Bir Dizinin Uzunluğunu Alacağız ve Şu Durumlarla İlgileneceğiz:
 
 - Eğer (n) çift ise çıktısı 0’dır.
 - Eğer (n) tek ise dizideki elemanları toplayacağız
 
-Yukarıda saydığımız iki madde için aşağıda bir örnek yer almaktadır:
+Yukarıda saydığımız iki madde için aşağıda farklı programlama dillerinde bir örnek yer almaktadır:
 
 ```mdx-code-block
 <Tabs>
@@ -360,7 +361,7 @@ using namespace std;
 
         // Fonksiyon çağrıldı
         cout << getSum(arr, 4)
-            << endl; // Çıktı 0’dır. Çünkü (n) çifttir.
+            << endl; // Çıktı 0’dır. Çünkü (n) çifttir
         cout << getSum(a, 5)
             << endl; // Çıktı sayıların toplamıdır. Çünkü (n) tektir
     }
@@ -449,15 +450,15 @@ using namespace std;
 
 #### En İyi Durum (Best Case)
 
-Büyüme eğrisi sabit olacaktır çünkü biz en iyi durumda (n)’in çift olduğunu varsayarız.
+Büyüme eğrisi **sabit (constant)** olacaktır çünkü biz en iyi durumda (n)’in çift olduğunu varsayarız.
 
 #### Ortalama Durum (Average Case)
 
-Bu durumda, çift ve tek olma ihtimalinin eşit olmasını varsayarız. Bu yüzden büyüme eğrisi linear olacaktır.
+Bu durumda, çift ve tek olma ihtimalinin eşit olmasını varsayarız. Bu yüzden büyüme eğrisi **linear** olacaktır.
 
 #### En Kötü Durum (Worst Case)
 
-Büyüme eğrisi linear olacaktır çünkü (n)’in her zaman tek olduğunu varsayarız.
+Büyüme eğrisi **linear** olacaktır çünkü (n)’in her zaman tek olduğunu varsayarız.
 
 <!---
 You can delete (NoContentHere)
@@ -469,7 +470,7 @@ You can delete (NoContentHere)
 
 <!--- Links Source - Start --->
 
-## Kaynaklar Baglantisi
+## Kaynaklar Bağlantısı
 
 :::info Kaynaklar Bağlantısı
 
