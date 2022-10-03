@@ -43,7 +43,7 @@ Yukarıda bahsedilen notasyonlara dayanarak, bir algoritmanın üç tane analiz 
 
 :::note Örnek
 
-Linerar Search algoritması için; bir dizide aranan bir elemanın (x) olmaması en kötü durumdur.
+Linear Search algoritması için; bir dizide aranan bir elemanın (x) olmaması en kötü durumdur.
 
 SearchElement() adında bir fonksiyonumuz olsun. SearchElement() fonksiyonu bir elemanın arr[] dizisinde yer aldığını varsayarak o elemanı bulabilmek için dizideki bütün verileri dolaşır. Aranılanılan elemanın dizide olmaması bize linear search’deki zaman karmaşıklğının en kötü durumunu (worst case) verir. Gösterimi O(n) şeklinderir.
 
@@ -127,7 +127,7 @@ En iyi durum analizinde bir algoritmada herhangi bir alt sınır (lower bound) g
 
 ## Karmaşıklık Analizi İle İlgili Örnekler
 
-### 1-Linerar Search Algoritması
+### 1-Linear Search Algoritması
 
 ```mdx-code-block
 <Tabs>
@@ -141,30 +141,30 @@ En iyi durum analizinde bir algoritmada herhangi bir alt sınır (lower bound) g
 // Eğer x varsa indexi dönder,
 // Değilse -1 dönder
 
-    int search(int arr[], int n, int x)
-      {
-          int i;
+int search(int arr[], int n, int x)
+  {
+      int i;
 
-          for (i = 0; i < n; i++) {
-              if (arr[i] == x)
-                  return i;
-          }
-          return -1;
+      for (i = 0; i < n; i++) {
+          if (arr[i] == x)
+              return i;
       }
+      return -1;
+  }
 
-    int main()
-      {
-          int arr[] = { 1, 10, 30, 15 };
-          int x = 30;
-          int n = sizeof(arr) / sizeof(arr[0]);
+int main()
+  {
+      int arr[] = { 1, 10, 30, 15 };
+      int x = 30;
+      int n = sizeof(arr) / sizeof(arr[0]);
 
-          // Fonksiyonu çağırdık
-          printf("%d is present at index %d", x,
-           search(arr, n, x));
+      // Fonksiyonu çağırdık
+      printf("%d is present at index %d", x,
+       search(arr, n, x));
 
-          getchar();
-          return 0;
-      }
+      getchar();
+      return 0;
+  }
 ```
 
 ```mdx-code-block
@@ -180,29 +180,29 @@ using namespace std;
 // Eğer x varsa indexi dönder,
 // Değilse -1 dönder
 
-    int search(int arr[], int n, int x)
-      {
-          int i;
+int search(int arr[], int n, int x)
+  {
+      int i;
 
-          for (i = 0; i < n; i++) {
-              if (arr[i] == x)
-                  return i;
-          }
-          return -1;
+      for (i = 0; i < n; i++) {
+          if (arr[i] == x)
+              return i;
       }
+      return -1;
+  }
 
-    int main()
-      {
-          int arr[] = { 1, 10, 30, 15 };
-          int x = 30;
-          int n = sizeof(arr) / sizeof(arr[0]);
+int main()
+  {
+      int arr[] = { 1, 10, 30, 15 };
+      int x = 30;
+      int n = sizeof(arr) / sizeof(arr[0]);
 
-          // Fonksiyonu çağırır
-          cout << x << " is present at index "
-              << search(arr, n, x);
+      // Fonksiyonu çağırır
+      cout << x << " is present at index "
+          << search(arr, n, x);
 
-          return 0;
-      }
+      return 0;
+  }
 ```
 
 ```mdx-code-block
@@ -217,28 +217,28 @@ public class GFG {
 // Eğer x varsa indexi dönder,
 // Değilse -1 dönder
 
-    static int search(int arr[], int n, int x)
-      {
-        int i;
+static int search(int arr[], int n, int x)
+  {
+    int i;
 
-        for (i = 0; i < n; i++) {
-            if (arr[i] == x) {
-                return i;
-            }
+    for (i = 0; i < n; i++) {
+        if (arr[i] == x) {
+            return i;
         }
-        return -1;
-      }
-
-    public static void main(String[] args)
-      {
-        int arr[] = { 1, 10, 30, 15 };
-        int x = 30;
-        int n = arr.length;
-
-        // Function call
-        System.out.printf("%d is present at index %d", x, search(arr, n, x));
-      }
     }
+    return -1;
+  }
+
+public static void main(String[] args)
+  {
+    int arr[] = { 1, 10, 30, 15 };
+    int x = 30;
+    int n = arr.length;
+
+    // Function call
+    System.out.printf("%d is present at index %d", x, search(arr, n, x));
+  }
+}
 ```
 
 ```mdx-code-block
@@ -251,19 +251,18 @@ public class GFG {
 # Eğer x varsa indexi dönder,
 # Değilse -1 dönder
 
-    def search(arr, x):
-        for index, value in enumerate(arr):
-            if value == x:
-                return index
-        return -1
+def search(arr, x):
+    for index, value in enumerate(arr):
+        if value == x:
+            return index
+    return -1
 
+if __name__ == '__main__':
+    arr = [1, 10, 30, 15]
+    x = 30
 
-    if __name__ == '__main__':
-        arr = [1, 10, 30, 15]
-        x = 30
-
-        # Fonksiyonu çağırır
-        print(x, "is present at index", search(arr, x))
+    # Fonksiyonu çağırır
+    print(x, "is present at index", search(arr, x))
 ```
 
 ```mdx-code-block
@@ -277,7 +276,7 @@ public class GFG {
 // Değilse -1 dönder
 
 function search(arr, n, x) {
-  var i;
+  let i;
 
   for (i = 0; i < n; i++) {
     if (arr[i] == x) {
@@ -287,9 +286,9 @@ function search(arr, n, x) {
   return -1;
 }
 
-var arr = [1, 10, 30, 15];
-var x = 30;
-var n = arr.length;
+let arr = [1, 10, 30, 15];
+let x = 30;
+let n = arr.length;
 
 document.write(x + ' is present at index ' + search(arr, n, x));
 ```
@@ -338,33 +337,33 @@ Yukarıda saydığımız iki madde için aşağıda farklı programlama dillerin
 #include <bits/stdc++.h>
 using namespace std;
 
-    int getSum(int arr[], int n)
-      {
-          if (n % 2 == 0) // (n) çifttir
-            {
-              return 0;
-            }
+int getSum(int arr[], int n)
+  {
+      if (n % 2 == 0) // (n) çifttir
+        {
+          return 0;
+        }
 
-          int sum = 0;
+      int sum = 0;
 
-          for (int i = 0; i < n; i++) {
-              sum += arr[i];
-          }
-          return sum; // (n) tektir
+      for (int i = 0; i < n; i++) {
+          sum += arr[i];
       }
+      return sum; // (n) tektir
+  }
 
-    int main()
-    {
-        // Biri tek, diğeri çift uzunlukta olmak üzere iki dizi bildirildi
-        int arr[4] = { 1, 2, 3, 4 };
-        int a[5] = { 1, 2, 3, 4, 5 };
+int main()
+{
+    // Biri tek, diğeri çift uzunlukta olmak üzere iki dizi bildirildi
+    int arr[4] = { 1, 2, 3, 4 };
+    int a[5] = { 1, 2, 3, 4, 5 };
 
-        // Fonksiyon çağrıldı
-        cout << getSum(arr, 4)
-            << endl; // Çıktı 0’dır. Çünkü (n) çifttir
-        cout << getSum(a, 5)
-            << endl; // Çıktı sayıların toplamıdır. Çünkü (n) tektir
-    }
+    // Fonksiyon çağrıldı
+    cout << getSum(arr, 4)
+        << endl; // Çıktı 0’dır. Çünkü (n) çifttir
+    cout << getSum(a, 5)
+        << endl; // Çıktı sayıların toplamıdır. Çünkü (n) tektir
+}
 ```
 
 ```mdx-code-block
@@ -373,36 +372,35 @@ using namespace std;
 ```
 
 ```java
-  public class GFG {
-      static int getsum(int arr[], int n)
-      {
-          if (n % 2 == 0) // eğer (n) çift ise
-            {
-              return 0;
-            }
-
-          int sum = 0;
-
-          for (int i = 0; i < n; i++)
+public class GFG {
+    static int getsum(int arr[], int n)
+    {
+        if (n % 2 == 0) // eğer (n) çift ise
           {
-            sum += arr[i];
+            return 0;
           }
-          return sum; // eğer (n) tek ise
-      }
 
-    public static void main(String[] args)
-      {
-          int arr1[] = { 1, 2, 3, 4 }; // Çift uzunlukta bir array tanımlandı
-          int n1 = arr1.length;
+        int sum = 0;
 
-          int arr2[] = { 1, 2, 3, 4, 5 }; // Tek uzunlukta bir array tanımlandı
-          int n2 = arr2.length;
+        for (int i = 0; i < n; i++)
+        {
+          sum += arr[i];
+        }
+        return sum; // eğer (n) tek ise
+    }
 
-          // Function call
-          System.out.println(getsum(arr1, n1)); // Çıktı 0’dır. Çünkü (n) çifttir
-          System.out.println(getsum(arr2, n2)); // Çıktı sayıların toplamıdır. Çünkü (n) tektir
-      }
-  }
+    public static void main(String[] args) {
+        int arr1[] = { 1, 2, 3, 4 }; // Çift uzunlukta bir array tanımlandı
+        int n1 = arr1.length;
+
+        int arr2[] = { 1, 2, 3, 4, 5 }; // Tek uzunlukta bir array tanımlandı
+        int n2 = arr2.length;
+
+        // Function call
+        System.out.println(getsum(arr1, n1)); // Çıktı 0’dır. Çünkü (n) çifttir
+        System.out.println(getsum(arr2, n2)); // Çıktı sayıların toplamıdır. Çünkü (n) tektir
+    }
+}
 ```
 
 ```mdx-code-block
@@ -411,27 +409,26 @@ using namespace std;
 ```
 
 ```python
-    def getsum(arr, n):
-        if n % 2 == 0:  # eğer (n) çift ise
-            return 0
+def getsum(arr, n):
+    if n % 2 == 0:  # eğer (n) çift ise
+        return 0
 
-        Sum = 0
-        for i in range(n):
-            Sum += arr[i]
-        return Sum  # eğer (n) tek ise
+    Sum = 0
+    for i in range(n):
+        Sum += arr[i]
+    return Sum  # eğer (n) tek ise
 
+    # Drivers Code
+    if __name__ == '__main__':
+    arr1 = [1, 2, 3, 4]  # Çift uzunlukta bir array tanımlandı
+    n1 = len(arr1)
+    arr2 = [1, 2, 3, 4, 5]  # Tek uzunlukta bir array tanımlandı
+    n2 = len(arr2)
 
-        # Drivers Code
-        if __name__ == '__main__':
-        arr1 = [1, 2, 3, 4]  # Çift uzunlukta bir array tanımlandı
-        n1 = len(arr1)
-        arr2 = [1, 2, 3, 4, 5]  # Tek uzunlukta bir array tanımlandı
-        n2 = len(arr2)
+    # Function call
+    print(getsum(arr1, n1))  # Çıktı 0’dır. Çünkü (n) çifttir
 
-        # Function call
-        print(getsum(arr1, n1))  # Çıktı 0’dır. Çünkü (n) çifttir
-
-        print(getsum(arr2, n2))  # Çıktı sayıların toplamıdır. Çünkü (n) tektir
+    print(getsum(arr2, n2))  # Çıktı sayıların toplamıdır. Çünkü (n) tektir
 ```
 
 ```mdx-code-block
@@ -460,12 +457,6 @@ Bu durumda, çift ve tek olma ihtimalinin eşit olmasını varsayarız. Bu yüzd
 
 Büyüme eğrisi **linear** olacaktır çünkü (n)’in her zaman tek olduğunu varsayarız.
 
-<!---
-You can delete (NoContentHere)
--->
-
-<!---<NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/34" />-->
-
 <!--- Content - End --->
 
 <!--- Links Source - Start --->
@@ -475,11 +466,29 @@ You can delete (NoContentHere)
 :::info Kaynaklar Bağlantısı
 
 <Tabs>
+  <TabItem value="youtube-videos" label="Youtube videoları" default>
+    <ul>
+      <li>
+        <a href="https://youtu.be/3bhBo9YCTpo">
+          Algoritma Analizi ve Big-O (Algoritma Analizi 1)
+        </a>
+      </li>
+    </ul>
+  </TabItem>
   <TabItem value="blog-article" label="Blog & Makale">
     <ul>
       <li>
         <a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/">
           Analysis of Algorithms | Set 2 (Worst, Average and Best Cases)
+        </a>
+      </li>
+    </ul>
+  </TabItem>
+  <TabItem value="questions" label="Sorular">
+    <ul>
+      <li>
+        <a href="https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/">
+          Practice Questions on Time Complexity Analysis
         </a>
       </li>
     </ul>
