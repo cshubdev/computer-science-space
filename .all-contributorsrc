@@ -53,6 +53,17 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "beyzanur-seyhan",
+      "name": "Beyzanur Seyhan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/80166639?v=4",
+      "profile": "https://github.com/beyzanur-seyhan",
+      "contributions": [
+        "blog",
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

@@ -14,7 +14,7 @@
 <br />
 <a herf="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Fire-Oceann/BB-TR-Kaynak?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-<a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=for-the-badge"/></a>
+<a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a herf=".URL_"><img alt="Open Source - ❤️" src="https://img.shields.io/badge/Open_Source-❤️-00d59b?style=for-the-badge"/></a>
 <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues-raw/Fire-Oceann/BB-TR-Kaynak?color=%23F2625A&style=for-the-badge"/></a>
@@ -74,6 +74,7 @@ Bu güzel insanlara teşekkürler ([emoji key](https://allcontributors.org/docs/
     <td align="center"><a href="https://github.com/Burak-Atak"><img src="https://avatars.githubusercontent.com/u/71793345?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Burak</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=Burak-Atak" title="Documentation">📖</a></td>
     <td align="center"><a href="https://medium.com/@beyzatekinli"><img src="https://avatars.githubusercontent.com/u/64313175?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beyzanur Tekinli</b></sub></a><br /><a href="#blog-b-tekinli" title="Blogposts">📝</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=b-tekinli" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/TalhaAksoy"><img src="https://avatars.githubusercontent.com/u/56833887?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Talha Aksoy</b></sub></a><br /><a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=TalhaAksoy" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=TalhaAksoy" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/beyzanur-seyhan"><img src="https://avatars.githubusercontent.com/u/80166639?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beyzanur Seyhan</b></sub></a><br /><a href="#blog-beyzanur-seyhan" title="Blogposts">📝</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=beyzanur-seyhan" title="Code">💻</a> <a href="https://github.com/Fire-Oceann/BB-TR-Kaynak/commits?author=beyzanur-seyhan" title="Documentation">📖</a></td>
   </tr>
 </table>
 
