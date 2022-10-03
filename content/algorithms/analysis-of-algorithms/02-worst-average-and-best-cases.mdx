@@ -12,17 +12,456 @@ import TabItem from '@theme/TabItem';
 
 <!--- Content - Start --->
 
-<!---
-You can delete (NoContentHere)
--->
+## Algoritmaların Karmaşıklık Analizlerinde Popüler Notasyonlar
 
-<NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/34" />
+[Önceki yazımızda](https://bb-tr-kaynak.netlify.app/algorithms/analysis-of-algorithms/asymptotic-analysis) asimptotik analizin algoritma analizinde problemlerle nasıl başa çıktığını tartışmıştık. Şimdi şu konulara göz atalım:
+
+- Asimptotik analizin genel görünümü
+- Worst case (en kötü durum),
+- Average case (ortalama durum),
+- Best case (en iyi durum)
+
+### 👉 Big O Notasyonu (Big-O Notation)
+
+**Big-O notasyon**; bir algoritmanın zaman karmaşıklığının en kötü durumudur (worst case). Big-O notasyon, bir metodun farklı veri boyutu girişlerinde yavaş bir oranda işlenmesini ifade eder. Bir algoritmanın giriş değerlerinin ihtiyaç duyduğu maximum zaman maliyetidir.
+
+### 👉 Omega Notasyonu (Omega Notation) (𝝮)
+
+Bir algoritmanın zaman karmaşıklığının en iyi durumudur (best case). Big-O notasyonunun tam tersidir. Yani, **Omega notasyonu** bir metodun farklı veri boyutu girişlerinde hızlı bir oranda işlenmesini ifade eder. Bir algoritmanın giriş değerlerinin ihtiyaç duyduğu minimum zaman maliyetidir.
+
+### 👉 Teta Notasyonu (Theta Notation) (θ)
+
+Bir algoritmanın zaman karmaşıklığının ortalama durumudur (average case). Bir fonksiyonda Big-O notasyonunun ve Omega notasyonunun ortalama durumudur.
+
+## Bir Algoritmanın Karmaşıklığını (Complexity) Ölçmek
+
+Yukarıda bahsedilen notasyonlara dayanarak, bir algoritmanın üç tane analiz durumunun olduğunu söyleyebiliriz.
+
+### 👉 En Kötü Durum (Worst Case) Analizi (En Çok Kullanılır)
+
+**En kötü durum (worst case) analizi**nde biz bir algoritmanın çalışma zamanındaki (running time) üst sınırını (upper bound) hesaplarız. Bir metodun çok fazla sayıda yürütülmesindeki nedeni bilmeliyiz.
+
+:::note Örnek
+
+Linear Search algoritması için; bir dizide aranan bir elemanın (x) olmaması en kötü durumdur.
+
+SearchElement() adında bir fonksiyonumuz olsun. SearchElement() fonksiyonu bir elemanın arr[] dizisinde yer aldığını varsayarak o elemanı bulabilmek için dizideki bütün verileri dolaşır. Aranılanılan elemanın dizide olmaması bize linear search’deki zaman karmaşıklğının en kötü durumunu (worst case) verir. Gösterimi O(n) şeklinderir.
+
+:::
+
+### 👉 En İyi Durum (Best Case) Analizi (Çok Nadir Kullanılır)
+
+**En iyi durum (best case) analizi**nde biz bir algoritmanın çalışma zamanındaki alt sınırı (lower bound) hesaplarız. Bir metodun çok az sayıda yürütülmesindeki nedeni bilmeliyiz. Arama algoritmasında en iyi durum array’de x’in ilk dizinde olmasıdır. En iyi durumda işlemin sayısı sabittir (n’e bağlı değildir). Böylece en iyi durumdaki zaman karmaşıklığının gösterimi Ω(1)’dir.
+
+### 👉 Ortalama Durum (Average Case) Analizi (Nadiren Kullanılır)
+
+Ortalama durum (average case) analizinde bütün olası girişleri alırız ve bütün girişlerin işleme süresini hesaplarız. Şu şekildedir:
+
+```jsx {1,4}
+ortalama durum = toplam girdi sayısı / tüm değerlerin toplamı
+
+Matematiksel gösterimi:
+W(n) = (1 + 2 + ... n) / n = n(n+1)/(2n) = (n + 1) / 2
+```
+
+Bu işlemin sonucu ortalama durumun zaman karmaşıklığını ifade edecektir.
+
+## Genelde Hangi Zaman Karmaşıklığı (Time Complexity) Kullanılır?
+
+Aşağıdaki karmaşık analiz notasyonları popülerliklerine göre sıralanmıştır.
+
+### 1-En Kötü Durum Analizi
+
+Çoğu zaman algoritmayı analiz ederken algoritmanın en kötü durumunu analiz ederiz. En kötü durum analizinde biz bir algoritmadaki **çalışma zamanının en üst sırı**na (upper bound) bakarız. Bu da bize iyi bir bilgi sağlar.
+
+### 2-Ortalama Durum Analizi
+
+Ortalama durum analizi pratik ölçümler yapmak için çok kullanışlı değildir. Nadiren kullanılır. Bu analizde bütün olası girişlerin matematiksel dağılımını bilmeliyiz.
+
+### 3-En İyi Durum Analizi
+
+En iyi durum analizinde bir algoritmada herhangi bir alt sınır (lower bound) garanti etmek bize bir bilgi sağlamaz. Bir algoritmanın çalışması yıllar alabilir.
+
+<details>
+  <summary>
+    <b>Asimptotik Analiz Hakkında İlginç Bilgiler</b>
+  </summary>
+  <div>
+    <div>
+      Bazı algoritmalar için bütün durumlar (en kötü, en iyi, ortalama)
+      asimptotik olarak aynıdır. Yani en kötü ve en iyi durum yoktur.{' '}
+    </div>
+    <br />
+    <details>
+      <summary>Örnek</summary>
+      <div>
+        Merge Sort algoritması bütün durumlarda Θ(n log(n)) işlemlerini yapar.
+      </div>
+    </details>
+    <div>
+      Diğer sıralama algoritmalarının çoğu en kötü ve en iyi durumlara
+      sahiptirler.
+    </div>
+    <br />
+    <details>
+      <summary>Örnek</summary>
+      <div>
+        Tipik bir Quik Sort uygulamasında (köşe elemanı olarak pivot
+        seçildiğinde) en kötü durum; giriş dizisi önceden sıralandığında meydana
+        gelir. En iyi durum ise pivot elementler her zaman diziyi iki yarıya
+        böler.
+      </div>
+    </details>
+    <br />
+    <details>
+      <summary>Örnek</summary>
+      <div>
+        Insertion Sort algoritması için en kötü durum dizideki elemanlar ters
+        sıralandığında ([5,4,3,2,1]) meydana gelir ve en iyi durum dizideki
+        elemanlar tıpkı beklenilen çıktı gibi ([1,2,3,4,5]) sıralandığında
+        meydana gelir.
+      </div>
+    </details>
+  </div>
+</details>
+
+## Karmaşıklık Analizi İle İlgili Örnekler
+
+### 1-Linear Search Algoritması
+
+```mdx-code-block
+<Tabs>
+<TabItem value="c" label="C" default>
+```
+
+```c
+#include <stdio.h>
+
+// Linear Search ile bir dizi içerisinde x’i arayacağız
+// Eğer x varsa indexi dönder,
+// Değilse -1 dönder
+
+int search(int arr[], int n, int x)
+  {
+      int i;
+
+      for (i = 0; i < n; i++) {
+          if (arr[i] == x)
+              return i;
+      }
+      return -1;
+  }
+
+int main()
+  {
+      int arr[] = { 1, 10, 30, 15 };
+      int x = 30;
+      int n = sizeof(arr) / sizeof(arr[0]);
+
+      // Fonksiyonu çağırdık
+      printf("%d is present at index %d", x,
+       search(arr, n, x));
+
+      getchar();
+      return 0;
+  }
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="cpp" label="C++">
+```
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+// Linear Search ile bir dizi içerisinde x’i arayacağız
+// Eğer x varsa indexi dönder,
+// Değilse -1 dönder
+
+int search(int arr[], int n, int x)
+  {
+      int i;
+
+      for (i = 0; i < n; i++) {
+          if (arr[i] == x)
+              return i;
+      }
+      return -1;
+  }
+
+int main()
+  {
+      int arr[] = { 1, 10, 30, 15 };
+      int x = 30;
+      int n = sizeof(arr) / sizeof(arr[0]);
+
+      // Fonksiyonu çağırır
+      cout << x << " is present at index "
+          << search(arr, n, x);
+
+      return 0;
+  }
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="java" label="Java">
+```
+
+```java
+public class GFG {
+
+// Linear Search ile bir dizi içerisinde x’i arayacağız
+// Eğer x varsa indexi dönder,
+// Değilse -1 dönder
+
+static int search(int arr[], int n, int x)
+  {
+    int i;
+
+    for (i = 0; i < n; i++) {
+        if (arr[i] == x) {
+            return i;
+        }
+    }
+    return -1;
+  }
+
+public static void main(String[] args)
+  {
+    int arr[] = { 1, 10, 30, 15 };
+    int x = 30;
+    int n = arr.length;
+
+    // Function call
+    System.out.printf("%d is present at index %d", x, search(arr, n, x));
+  }
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="python" label="Python 3">
+```
+
+```python
+# Linear Search ile bir dizi içerisinde x’i arayacağız
+# Eğer x varsa indexi dönder,
+# Değilse -1 dönder
+
+def search(arr, x):
+    for index, value in enumerate(arr):
+        if value == x:
+            return index
+    return -1
+
+if __name__ == '__main__':
+    arr = [1, 10, 30, 15]
+    x = 30
+
+    # Fonksiyonu çağırır
+    print(x, "is present at index", search(arr, x))
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="javascript" label="Javascript">
+```
+
+```javascript
+// Linear Search ile bir dizi içerisinde x’i arayacağız
+// Eğer x varsa indexi dönder,
+// Değilse -1 dönder
+
+function search(arr, n, x) {
+  let i;
+
+  for (i = 0; i < n; i++) {
+    if (arr[i] == x) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+let arr = [1, 10, 30, 15];
+let x = 30;
+let n = arr.length;
+
+document.write(x + ' is present at index ' + search(arr, n, x));
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+**Çıktı**
+
+```
+30 is present at index 2
+```
+
+### Linear Search Algoritmasının Karmaşıklık Analizi
+
+#### En İyi Durum (Best Case)
+
+Bulunmak istenen eleman listenin ilk indeksindeyse bu durum gerçekleşir. Böylece karşılaştırma bir kez gerçekleşir. **O(1)** ile gösterilir.
+
+#### Ortalama Durum (Average Case)
+
+Verilen listede bulunmak istenen eleman listenin ortasındaysa bu durum gerçekleşir. **O(n)** ile gösterilir.
+
+#### En Kötü Durum (Worst Case)
+
+**O(n)** şeklinde gösterelilir. Şu durumlarda gerçekleşir:
+
+- Aranacak eleman sonuncu index’te aranmalı
+- Aranacak eleman listede olmamalı
+
+### 2-Aşağıdaki Örnekte Bir Dizinin Uzunluğunu Alacağız ve Şu Durumlarla İlgileneceğiz:
+
+- Eğer (n) çift ise çıktısı 0’dır.
+- Eğer (n) tek ise dizideki elemanları toplayacağız
+
+Yukarıda saydığımız iki madde için aşağıda farklı programlama dillerinde bir örnek yer almaktadır:
+
+```mdx-code-block
+<Tabs>
+<TabItem value="cpp" label="C++" default>
+```
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
+int getSum(int arr[], int n)
+  {
+      if (n % 2 == 0) // (n) çifttir
+        {
+          return 0;
+        }
+
+      int sum = 0;
+
+      for (int i = 0; i < n; i++) {
+          sum += arr[i];
+      }
+      return sum; // (n) tektir
+  }
+
+int main()
+{
+    // Biri tek, diğeri çift uzunlukta olmak üzere iki dizi bildirildi
+    int arr[4] = { 1, 2, 3, 4 };
+    int a[5] = { 1, 2, 3, 4, 5 };
+
+    // Fonksiyon çağrıldı
+    cout << getSum(arr, 4)
+        << endl; // Çıktı 0’dır. Çünkü (n) çifttir
+    cout << getSum(a, 5)
+        << endl; // Çıktı sayıların toplamıdır. Çünkü (n) tektir
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="java" label="Java">
+```
+
+```java
+public class GFG {
+    static int getsum(int arr[], int n)
+    {
+        if (n % 2 == 0) // eğer (n) çift ise
+          {
+            return 0;
+          }
+
+        int sum = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+          sum += arr[i];
+        }
+        return sum; // eğer (n) tek ise
+    }
+
+    public static void main(String[] args) {
+        int arr1[] = { 1, 2, 3, 4 }; // Çift uzunlukta bir array tanımlandı
+        int n1 = arr1.length;
+
+        int arr2[] = { 1, 2, 3, 4, 5 }; // Tek uzunlukta bir array tanımlandı
+        int n2 = arr2.length;
+
+        // Function call
+        System.out.println(getsum(arr1, n1)); // Çıktı 0’dır. Çünkü (n) çifttir
+        System.out.println(getsum(arr2, n2)); // Çıktı sayıların toplamıdır. Çünkü (n) tektir
+    }
+}
+```
+
+```mdx-code-block
+</TabItem>
+<TabItem value="python" label="Python 3">
+```
+
+```python
+def getsum(arr, n):
+    if n % 2 == 0:  # eğer (n) çift ise
+        return 0
+
+    Sum = 0
+    for i in range(n):
+        Sum += arr[i]
+    return Sum  # eğer (n) tek ise
+
+    # Drivers Code
+    if __name__ == '__main__':
+    arr1 = [1, 2, 3, 4]  # Çift uzunlukta bir array tanımlandı
+    n1 = len(arr1)
+    arr2 = [1, 2, 3, 4, 5]  # Tek uzunlukta bir array tanımlandı
+    n2 = len(arr2)
+
+    # Function call
+    print(getsum(arr1, n1))  # Çıktı 0’dır. Çünkü (n) çifttir
+
+    print(getsum(arr2, n2))  # Çıktı sayıların toplamıdır. Çünkü (n) tektir
+```
+
+```mdx-code-block
+</TabItem>
+</Tabs>
+```
+
+**Çıktı**
+
+```
+0
+15
+```
+
+### Bu Örneğin Zaman Karmaşıklığı Analizi
+
+#### En İyi Durum (Best Case)
+
+Büyüme eğrisi **sabit (constant)** olacaktır çünkü biz en iyi durumda (n)’in çift olduğunu varsayarız.
+
+#### Ortalama Durum (Average Case)
+
+Bu durumda, çift ve tek olma ihtimalinin eşit olmasını varsayarız. Bu yüzden büyüme eğrisi **linear** olacaktır.
+
+#### En Kötü Durum (Worst Case)
+
+Büyüme eğrisi **linear** olacaktır çünkü (n)’in her zaman tek olduğunu varsayarız.
 
 <!--- Content - End --->
 
 <!--- Links Source - Start --->
 
-## Kaynaklar Baglantisi
+## Kaynaklar Bağlantısı
 
 :::info Kaynaklar Bağlantısı
 
@@ -30,21 +469,27 @@ You can delete (NoContentHere)
   <TabItem value="youtube-videos" label="Youtube videoları" default>
     <ul>
       <li>
-        <a href="https://youtube.com">Video Title</a>
+        <a href="https://youtu.be/3bhBo9YCTpo">
+          Algoritma Analizi ve Big-O (Algoritma Analizi 1)
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="blog-article" label="Blog & Makale">
     <ul>
       <li>
-        <a href="https://medium.com">Blog Title</a>
+        <a href="https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/">
+          Analysis of Algorithms | Set 2 (Worst, Average and Best Cases)
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="questions" label="Sorular">
     <ul>
       <li>
-        <a href="https://hackerrank.com">Question Title</a>
+        <a href="https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/">
+          Practice Questions on Time Complexity Analysis
+        </a>
       </li>
     </ul>
   </TabItem>
