@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Linked List": {
+    "message": "Linked List",
+    "description": "The label for category Linked List in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Queues": {
+    "message": "Queues",
+    "description": "The label for category Queues in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Graph": {
+    "message": "Graph",
+    "description": "The label for category Graph in sidebar defaultSidebar"
+  }
+}

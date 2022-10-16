@@ -3,16 +3,16 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const githubRepoURL = 'https://github.com/Fire-Oceann/BB-TR-Kaynak';
-const editURL_githubRepo = 'https://github.com/Fire-Oceann/BB-TR-Kaynak/edit/develop/'
+const githubRepoURL = 'https://github.com/Fire-Oceann/CS-Space';
+const editURL_githubRepo = 'https://github.com/Fire-Oceann/CS-Space/edit/develop/'
 const twitterURL = 'https://twitter.com/ziarparvaiz_01'
-const discordURL = 'https://discord.gg/bb-tr-kaynak'
+const discordURL = 'https://discord.gg/bYWVWrDkCU'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Bilgisayar Bilimi Türkçe Kaynak',
-  tagline: 'Meraklılar için bir Bilgisayar Bilimi portalı. İyi yazılmış, iyi düşünülmüş ve iyi açıklanmış bilgisayar bilimi ve programlama makaleleri içerir.',
-  url: 'https://bb-tr-kaynak.netlify.app',
+  title: 'Computer Science Space',
+  tagline: 'A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles. ',
+  url: 'https://cs-space.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -21,15 +21,16 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Fire-Oceann', // Usually your GitHub org/user name.
-  projectName: 'BB-TR-Kaynak', // Usually your repo name.
+  projectName: 'CS-Space', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
+
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+		defaultLocale: 'en',
+		locales: [ 'en', 'tr', 'fr', 'de', 'ru', 'it']
+	},
 
   presets: [
     [
@@ -112,17 +113,18 @@ const config = {
         playgroundPosition: 'bottom',
       },
       navbar: {
-        title: 'Bilgisayar Bilimi Türkçe Kaynak',
+        title: 'Computer Science Space',
         logo: {
-          alt: 'Bilgisayar Bilimi Türkçe Kaynak',
+          alt: 'Computer Science Space',
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/algorithms', label: 'Algoritmalar', position: 'left' },
-          { to: '/data-structure', label: 'Veri Yapıları', position: 'left' },
+          { to: '/algorithms', label: 'Algorithms', position: 'left' },
+          { to: '/data-structure', label: 'Data Structures', position: 'left' },
           { to: '/git', label: 'GIT', position: 'left' },
-          { href: '/docs', label: '❤️ Katkıda Bulunmak', position: 'right' },
-          {to: '/blog', label: 'Makaleler', position: 'right'},
+          { href: '/docs', label: '❤️ Contributing', position: 'right' },
+          {to: '/blog', label: 'Blog', position: 'right'},
+          { type: 'localeDropdown', position: 'right' },
           {
             href: githubRepoURL,
             position: 'right',
@@ -141,16 +143,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: "Dokümanlar",
+            title: "Docs",
             items: [
-              { label: "Dokümantasyon",  to: "/docs" },
-              { label: "Algoritmalar",  to: "/algorithms" },
-              { label: "Veri Yapıları",  to: "/data-structure" },
+              { label: "Documentation",  to: "/docs" },
+              { label: "Algorithms",  to: "/algorithms" },
+              { label: "Data Structures",  to: "/data-structure" },
               { label: "GIT",  to: "/git" },
             ],
           },
           {
-            title: 'Topluluk',
+            title: 'Community',
             items: [
               {
                 label: 'Discord',
@@ -163,10 +165,10 @@ const config = {
             ],
           },
           {
-            title: 'Daha Fazlası',
+            title: 'More',
             items: [
               {
-                label: 'Makaleler',
+                label: 'Blog',
                 to: '/blog',
               },
               {
@@ -187,7 +189,7 @@ const config = {
       },
       announcementBar: {
 				content:
-					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/BB-TR-Kaynak/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi unutmayın.',
+					'⚠ Bu site henüz yapım aşamasındadır. <a target="_blank" rel="noopener noreferrer" href="/docs">Katkıda bulunarak</a> bize yardımcı olabilirsiniz. <a target="_blank" rel="noopener noreferrer" href="https://github.com/Fire-Oceann/CS-Space/stargazers">GitHub</a>\'da bize bir ⭐ yıldız vermeyi unutmayın.',
 				backgroundColor: '#8f5ee828',
 				textColor: '#fff',
 				isCloseable: false,

@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Computer Science Space",
+    "description": "The title in the navbar"
+  },
+  "item.label.Algorithms": {
+    "message": "Algorithms",
+    "description": "Navbar item with label Algorithms"
+  },
+  "item.label.Data Structures": {
+    "message": "Data Structures",
+    "description": "Navbar item with label Data Structures"
+  },
+  "item.label.GIT": {
+    "message": "GIT",
+    "description": "Navbar item with label GIT"
+  },
+  "item.label.❤️ Contributing": {
+    "message": "❤️ Contributing",
+    "description": "Navbar item with label ❤️ Contributing"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}
