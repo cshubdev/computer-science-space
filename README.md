@@ -37,7 +37,7 @@
 Make sure you have installed all of the following prerequisites on your development machine:
 
 - Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Node.js and npm - [Download & Install Node.js and npm](https://nodejs.org/en/download/). If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js and npm.
 
 ## Installation & Setup
 
@@ -95,4 +95,4 @@ We use [SemVer](https://semver.org/) for versioning. For the versions available,
 
 ## License
 
-This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](./LICENSE). file for details
+This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](./LICENSE) file for details
