@@ -1,69 +1,69 @@
-name: "🐛 Hata raporu"
-title: "[BUG] - SORUNUN_BAŞLIĞINIZI_BURADAN_DEĞİŞTİRİN"
-description: Geliştirmemize yardımcı olacak bir rapor oluşturun
+name: '🐛 Bug report'
+title: '[BUG] - YOUR_ISSUE_TITLE_HERE_REPLACE_ME'
+description: Create a report to help us improve
 labels: [🐛 bug]
 body:
   - type: markdown
     attributes:
       value: |
-        Bir sorunu bildirdiğiniz için teşekkür ederiz :pray:.
+        Thank you for reporting an issue :pray:.
+        This issue tracker is for reporting bugs found in [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) github repository
+        If you have a question about how to achieve something and are struggling, please post a question
+        inside of either of the following places:
 
-        Bu sorun izleyici, [Fire Ocean - Bilgisayar Bilimi Türkçe Kaynak github deposunda](https://github.com/Fire-Oceann/BB-TR-Kaynak) bulunan hataları bildirmek içindir.
-        Bir şeyi nasıl başaracağınızla ilgili bir sorunuz varsa ve zorlanıyorsanız,
-        lütfen aşağıdaki yerlerden birine bir soru gönderin:
-          - Fire Ocean - TR Source [Discussion's tab](https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions)
-          - Fire Ocean - TR Source [Discord channel](https://discord.gg/bYWVWrDkCU)
+          - CS-SPACE's [Discussion's tab](https://github.com/Fire-Oceann/CS-Space/discussions)
+          - CS-SPACE's [Discord channel](https://discord.gg/bYWVWrDkCU)
 
+        Before submitting a new bug/issue, please check the links below to see if there is a solution or question posted there already:
 
-        Yeni bir hata/sorun göndermeden önce, orada zaten yayınlanmış bir çözüm veya soru olup olmadığını görmek için lütfen aşağıdaki bağlantıları kontrol edin.:
-         - Fire Ocean - TR Source'un [Issue sekmesi](https://github.com/Fire-Oceann/BB-TR-Kaynak/issues)
-         - Fire Ocean - TR Source'un [kapatılan sorunlar sekmesi tab](https://github.com/Fire-Oceann/BB-TR-Kaynak/issues?q=is%3Aissue+is%3Aclosedsed)
-         - Fire Ocean - TR Source'un [Tartışmalar sekmesi](https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions)
+         - CS-SPACE's [Issue's tab](https://github.com/Fire-Oceann/CS-Space/issues)
+         - CS-SPACE's [closed issues tab](https://github.com/Fire-Oceann/CS-Space/issues?q=is%3Aissue+is%3Aclosedsed)
+         - CS-SPACE's [Discussions tab](https://github.com/Fire-Oceann/CS-Space/discussions)
 
-        Ne kadar fazla bilgi doldurursanız, topluluk size o kadar iyi yardımcı olabilir.
+        The more information you fill in, the better the community can help you.
   - type: textarea
     id: description
     attributes:
-      label: Hatayı açıklayın
-      description: Karşılaştığınız zorluğun net ve kısa bir tanımını yapın.
+      label: Describe the bug
+      description: Provide a clear and concise description of the challenge you are running into.
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Hatayı veya Sorunu Yeniden Oluşturma Adımları
-      description: Davranışı yeniden oluşturmak için atmamız gereken adımları açıklayın.
+      label: Steps to Reproduce the Bug or Issue
+      description: Describe the steps we have to take to reproduce the behavior.
       placeholder: |
-        1. '...' seçeneğine gidin
-         2. '....' üzerine tıklayın
-         3. '....' seçeneğine ilerleyin
-         4. Hataya bakın
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Beklenen davranış
-      description: Ne olmasını beklediğinize dair net ve özlü bir açıklama yapın.
+      label: Expected behavior
+      description: Provide a clear and concise description of what you expected to happen.
       placeholder: |
-        Bir kullanıcı olarak ___ davranış bekliyordum ama ___ görüyorum
+        As a user, I expected ___ behavior but I am seeing ____
     validations:
       required: true
   - type: textarea
     id: screenshots_or_videos
     attributes:
-      label: Ekran Görüntüleri veya Videolar
+      label: Screenshots or Videos
       description: |
-        Varsa, sorununuzu açıklamaya yardımcı olması için ekran görüntüleri veya bir video ekleyin.
-        Desteklenen dosya görüntüsü/dosya türleri ve dosya boyutu sınırları hakkında daha fazla bilgi için
-        lütfen aşağıdaki bağlantıya bakın: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
       placeholder: |
-        Video veya resim dosyalarınızı bu düzenleyicinin içine sürükleyebilirsiniz. ↓
+        You can drag your video or image files inside of this editor ↓
   - type: input
     id: os
     attributes:
-      label: İşletim Sistemi Sürümü
-      description: Hangi işletim sistemini kullanıyorsunuz?
+      label: Operating System Version
+      description: What operating system are you using?
       placeholder: |
         - OS: [e.g. macOS, Windows, Linux]
     validations:
@@ -71,16 +71,16 @@ body:
   - type: dropdown
     id: browser_type
     attributes:
-      label: Tarayıcı
-      description: Sorunun yeniden oluşturulabileceği (bildiğiniz) tarayıcıları seçin.
+      label: Browser
+      description: Select the browsers where the issue can be reproduced (that you know of).
       options:
-        - "Firefox"
-        - "Chrome"
-        - "Opera"
-        - "Opera GX"
-        - "Brave"
-        - "Safari"
-        - "Edge"
-        - "Diğer (ek bağlam ekleyin)"
+        - 'Firefox'
+        - 'Chrome'
+        - 'Opera'
+        - 'Opera GX'
+        - 'Brave'
+        - 'Safari'
+        - 'Edge'
+        - 'Other (add additonal context)'
     validations:
       required: true

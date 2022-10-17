@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: 🤔 Uzun soru veya fikirler?
-    url: https://github.com/Fire-Oceann/BB-TR-Kaynak/discussions
-    about: Uzun biçimli sorular sorun ve fikirleri tartışın.
-  - name: 💬 Discord Topluluk Sohbeti
-    url: https:discord.gg/bb-tr-kaynak
-    about: Hızlı sorular sorun veya `Fire Ocean - TR Source` topluluğu Discord sunucusunda sohbet edin.
+  - name: 🤔 Long questions or ideas?
+    url: https://github.com/Fire-Oceann/CS-Space/discussions
+    about: Ask long-form questions and discuss ideas.
+  - name: 💬 Discord Community Chat
+    url: https://discord.gg/bYWVWrDkCU
+    about: Ask quick questions or chat on the `CS-SPCAE` community Discord server.

@@ -1,50 +1,50 @@
-name: 🚀 Özellik isteği
-title: '[Feature Request] ÖZELLİK_BAŞLIĞINIZI_BURADAN_DEĞİŞTİRİN'
+name: 🚀 Feature request
+title: '[Feature Request] YOUR_FEATURE_TITLE_HERE_REPLACE_ME'
 labels: [🚀 feature]
 description: |
-  💡 'Fire Ocean - TR Source' projesi için bir fikir önerin
-  Örnekler
-    - yeni bir dokuman önermek
-    - mevcut bir dokuman iyileştirin
-    - yeni bir bileşen önermek
-    - ....vb
+  💡 Suggest an idea for the 'CS-SPACE' project
+  Examples
+    - propose a new document
+    - improve an existing document
+    - propose a new component
+    - ....etc
 body:
   - type: markdown
     attributes:
       value: |
-        Bu sorun formu yalnızca özellik istemek içindir! Örneğin, yeni bir bileşen istemek, davranış ... vb.
-        Bir hatayı bildirmek istiyorsanız, lütfen [hata bildirim formunu](https://github.com/Fire-Oceann/fireocean-s/issues/new?assignees=&labels=&template=bug_report.yml) kullanın.
+        This issue form is for requesting features only! For example, requesting a new component, behavior ... etc
+        If you want to report a bug, please use the [bug report form](https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=%F0%9F%90%9B+bug&template=bug_report.yml).
   - type: textarea
     validations:
       required: true
     attributes:
-      label: Özellik isteğiniz bir sorunla mı ilgili? Lütfen tanımla.
-      description: Sorunun ne olduğuna dair net ve özlü bir açıklama. Örnek. Ben her zaman hayal kırıklığına uğradım [...]
+      label: Is your feature request related to a problem? Please describe.
+      description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
   - type: textarea
     validations:
       required: true
     attributes:
-      label: İstediğiniz çözümü açıklayın
-      description: Ne olmasını istediğinizin açık ve özlü bir açıklaması.
+      label: Describe the solution you'd like
+      description: A clear and concise description of what you want to happen.
       placeholder: |
-        Bir kullanıcı olarak ___ davranış bekliyordum ama ___ ...
+        As a user, I expected ___ behavior but ___ ...
 
-         Görmek istediğim İdeal Adımlar:
-         1. '...' seçeneğine gidin
-         2. '....' üzerine tıklayın
+         Ideal Steps I would Like to see:
+         1. Go to '...'
+         2. Click on '...'
          3. ....
   - type: textarea
     validations:
       required: true
     attributes:
-      label: Düşündüğünüz alternatifleri açıklayın
-      description: Düşündüğünüz tüm alternatif çözümlerin veya özelliklerin açık ve özlü bir açıklaması.
+      label: Describe alternatives you've considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
   - type: textarea
     attributes:
-      label: Ekran Görüntüleri veya Videolar
+      label: Screenshots or Videos
       description: |
-        Varsa, sorununuzu açıklamaya yardımcı olması için ekran görüntüleri veya bir video ekleyin.
-        Desteklenen dosya görüntüsü/dosya türleri ve dosya boyutu sınırları hakkında daha fazla bilgi için 
-        lütfen aşağıdaki bağlantıya bakın: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
+        If applicable, add screenshots or a video to help explain your problem.
+        For more information on the supported file image/file types and the file size limits, please refer
+        to the following link: https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/attaching-files
       placeholder: |
-        Video veya resim dosyalarınızı bu düzenleyicinin içine sürükleyebilirsiniz ↓
+        You can drag your video or image files inside of this editor ↓
