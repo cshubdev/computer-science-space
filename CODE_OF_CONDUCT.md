@@ -1,1 +1,1 @@
-Lütfen [Davranış Kuralları kılavuzumuza](https://bb-tr-kaynak.netlify.app/docs/Code-Of-Conduct) bakın 😊.
+Please refer to the [Code of Conduct](https://cs-space.vercel.app/docs/Code-Of-Conduct) guide 😊.
