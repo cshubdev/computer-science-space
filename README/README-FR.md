@@ -62,7 +62,7 @@ Ensemble , nous pouvons améliorer `CS-SPACE`!
 
 First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
 
-Please read [our contribution guidelines ](../CONTRIBUTING.md) for details on our [code of conduct](../CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+Veuillez lire [our contribution guidelines ](../CONTRIBUTING.md) pour plus de détails sur notre [code de conduite](../CODE_OF_CONDUCT.md), et le processus pour nous soumettre des pull requests
 
 ## Contributeurs ✨
 
@@ -95,4 +95,4 @@ Nous utilisons [SemVer](https://semver.org/) pour le versioning.Pour les verions
 
 ## Licence
 
-Ce projet est sous la [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) Licence - see the [LICENSE](../LICENSE). fichier pour plus de détails
+Ce projet est sous la [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) Licence - Vous pouvez voir le [LICENSE](../LICENSE) fichier pour plus de détails
