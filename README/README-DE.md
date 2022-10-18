@@ -24,11 +24,11 @@
 
 </div>
 
-<kbd>[<img title="Türkçe" alt="Türkçe" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](README/README-TR.md)</kbd>
-<kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](README/README-FR.md)</kbd>
-<kbd>[<img title="Deutsch" alt="Deutsch" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](README/README-DE.md)</kbd>
-<kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](README/README-RU.md)</kbd>
-<kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](README/README-IT.md)</kbd>
+<kbd>[<img title="Türkçe" alt="Türkçe" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](README-TR.md)</kbd>
+<kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](README-FR.md)</kbd>
+<kbd>[<img title="Deutsch" alt="Deutsch" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](README-DE.md)</kbd>
+<kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](README-RU.md)</kbd>
+<kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](README-IT.md)</kbd>
 
 >Ein Informatik-Portal für Enthusiasten. Es enthält gut geschriebene, gut durchdachte und gut erklärte Informatik- und Programmierartikel.
 
@@ -36,8 +36,8 @@
 
 Stellen Sie sicher, dass Sie alle folgenden Voraussetzungen auf Ihrem Entwicklungscomputer installiert haben:
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Git - [Laden Sie Git herunter und installieren Sie es](https://git-scm.com/downloads). Auf OSX- und Linux-Rechnern ist dies normalerweise bereits installiert.
+- Node.js - [Laden Sie Git herunter und installieren Sie es](https://nodejs.org/en/download/) Node.js und der npm-Paketmanager. Wenn Sie auf Probleme stoßen, können Sie dies auch verwenden [GitHub Gist](https://gist.github.com/isaacs/579814) um Node.js zu installieren.
 
 ## Installation & Einrichtung
 
