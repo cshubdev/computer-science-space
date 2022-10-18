@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Hata Bildir</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Özellik Talep Et</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Bir soru sor</a>
 </h3>
 
 <div align="center">
@@ -30,16 +30,16 @@
 <kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](./README-RU.md)</kbd>
 <kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](./README-IT.md)</kbd>
 
-> A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.
+> Meraklılar için bir Bilgisayar Bilimi portalı. İyi yazılmış, iyi düşünülmüş ve iyi açıklanmış bilgisayar bilimi ve programlama makaleleri içerir.
 
-## Prerequisites
+## Önkoşullar
 
-Make sure you have installed all of the following prerequisites on your development machine:
+Geliştirme makinenize aşağıdaki ön koşulların tümünü yüklediğinizden emin olun:
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Git - [Download & Install Git](https://git-scm.com/downloads). OSX ve Linux makinelerinde genellikle bu zaten kuruludur.
+- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js ve npm paket yöneticisi. Herhangi bir sorunla karşılaşırsanız, bunu da kullanabilirsiniz. [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 
-## Installation & Setup
+## Kurulum ve Kurulum
 
 ```bash
 git clone https://github.com/Fire-Oceann/CS-Space.git
@@ -48,25 +48,25 @@ npm install
 npm start
 ```
 
-## Project assistance
+## Proje yardımı
 
-If you want to say thank you or/and support active development of `CS-SPACE`:
+Teşekkür etmek veya/ve aktif gelişimini desteklemek istiyorsanız `CS-SPACE`:
 
-- Add a ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) to the project.
-- Tweet about the `CS-SPACE`.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+- Projeye bir ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) ekleyin.
+- `CS-SPACE` hakkında tweet.
+- [Dev.to](https://dev.to/), [Medium](https://medium.com/) veya kişisel blogunuzda proje hakkında ilginç makaleler yazın.
+  
+Birlikte, `CS-SPACE` daha iyi hale getirebiliriz!
 
-Together, we can make `CS-SPACE` better!
+## 🤝 Katkı
 
-## 🤝 Contributing
+Öncelikle, katkıda bulunmak için zaman ayırdığınız için teşekkürler! Katkılar, açık kaynak topluluğunu öğrenmek, ilham vermek ve yaratmak için harika bir yer yapan şeydir. Yaptığınız katkılar herkese fayda sağlayacak ve çok takdir edilecektir.
+  
+[Davranış kurallarımız](../CODE_OF_CONDUCT.md) ve bize çekme talepleri gönderme süreciyle ilgili ayrıntılar için lütfen [katkı yönergelerimizi](../CONTRIBUTING.md) okuyun.
 
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+## Katkıda Bulunanlar ✨
 
-Please read [our contribution guidelines ](../CONTRIBUTING.md) for details on our [code of conduct](../CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
-
-## Contributors ✨
-
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Bu harika insanlara teşekkürler ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -87,12 +87,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Bu proje, [tüm katkıda bulunanlar](https://github.com/all-contributors/all-contributors) spesifikasyonunu takip eder. Her türlü katkı hoş geldiniz!
 
-## Versioning
+## sürüm oluşturma
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/CS-Space/tags).
+Versiyonlama için [SemVer](https://semver.org/) kullanıyoruz. Mevcut sürümler için [bu depodaki etiketlere](https://github.com/Fire-Oceann/CS-Space/tags) bakın.
 
-## License
+## Lisans
 
-This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](../LICENSE). file for details
+Bu proje [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) kapsamında lisanslanmıştır. Lisans - ayrıntılar için [LİSANS](../LICENSE) dosyasına bakın.
