@@ -30,16 +30,17 @@
 <kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](./README-RU.md)</kbd>
 <kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](./README-IT.md)</kbd>
 
-> A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.
+> Un portail pour les passionnés de l'informatique. Un portail contenant des bons articles sur l'informatique et la programmation.
 
-## Prerequisites
+## Prerequis
 
 Make sure you have installed all of the following prerequisites on your development machine:
+Assurez-vous d'avoir installé tous les prérequis sur votre ordinateur:
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Git - [Download & Install Git](https://git-scm.com/downloads). Les systèmes OSX and Linux ont généralement git déjà installé.
+- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js et  npm package manager. si vous rencontrez des problèmes, vous pouvez aussi utilliser [GitHub Gist](https://gist.github.com/isaacs/579814) pour installer Node.js.
 
-## Installation & Setup
+## Installation & configuration
 
 ```bash
 git clone https://github.com/Fire-Oceann/CS-Space.git
