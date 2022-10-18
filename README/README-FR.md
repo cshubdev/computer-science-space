@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Reporter un Bug</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Demander une fonctionnalité</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Poser une question</a>
 </h3>
 
 <div align="center">
