@@ -34,7 +34,6 @@
 
 ## Prerequis
 
-Make sure you have installed all of the following prerequisites on your development machine:
 Assurez-vous d'avoir installé tous les prérequis sur votre ordinateur:
 
 - Git - [Download & Install Git](https://git-scm.com/downloads). Les systèmes OSX and Linux ont généralement git déjà installé.
@@ -49,25 +48,26 @@ npm install
 npm start
 ```
 
-## Project assistance
+## Aide au projet
 
 If you want to say thank you or/and support active development of `CS-SPACE`:
+Si vous voulez remercier ou/et soutenir le développement de `CS-SPACE`
 
-- Add a ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) to the project.
-- Tweet about the `CS-SPACE`.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+- Ajouter un ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) sur le projet.
+- Créer un Tweet sur `CS-SPACE`.
+- Ecrivez des bon articles sur le projet sur [Dev.to](https://dev.to/), [Medium](https://medium.com/) ou votre blog personnel.
 
-Together, we can make `CS-SPACE` better!
+Ensemble , nous pouvons améliorer `CS-SPACE`!
 
-## 🤝 Contributing
+## 🤝 Contribution
 
 First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
 
 Please read [our contribution guidelines ](../CONTRIBUTING.md) for details on our [code of conduct](../CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-## Contributors ✨
+## Contributeurs ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Merci à ces  personnes formidables([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
