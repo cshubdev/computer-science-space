@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Signaler un bug</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Demander une fonctionnalité</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Poser une question</a>
 </h3>
 
 <div align="center">
@@ -30,46 +30,46 @@
 <kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](./README-RU.md)</kbd>
 <kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](./README-IT.md)</kbd>
 
-> A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.
+> Un portail informatique pour les passionnés. Il contient des articles d'informatique et de programmation bien écrits, bien pensés et bien expliqués.
 
-## Prerequisites
+## Prérequis
 
-Make sure you have installed all of the following prerequisites on your development machine:
+Assurez-vous d'avoir installé tous les prérequis suivants sur votre ordinateur de développement :
 
-- Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
-- Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
+- Git - [Télécharger et installer Git](https://git-scm.com/downloads). Les machines OSX et Linux l'ont généralement déjà installé.
+- Node.js - [Télécharger et installer](https://nodejs.org/en/download/) Node.js et le gestionnaire de packages npm. Si vous rencontrez des problèmes, vous pouvez également utiliser ce [GitHub Gist](https://gist.github.com/isaacs/579814) pour installer Node.js.
 
-## Installation & Setup
+## Installation et configuration
 
-```bash
-git clone https://github.com/Fire-Oceann/CS-Space.git
+ ```bash
+ git clone https://github.com/Fire-Oceann/CS-Space.git
 cd CS-Space
 npm install
 npm start
 ```
 
-## Project assistance
+## Accompagnement de projet
 
-If you want to say thank you or/and support active development of `CS-SPACE`:
+Si vous voulez dire merci ou/et soutenir le développement actif de `CS-SPACE` :
 
-- Add a ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) to the project.
-- Tweet about the `CS-SPACE`.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+- Ajoutez un ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) au projet.
+- Tweetez sur le `CS-SPACE`.
+- Rédigez des articles intéressants sur le projet sur [Dev.to](https://dev.to/), [Medium](https://medium.com/) ou votre blog personnel.
 
-Together, we can make `CS-SPACE` better!
+Ensemble, nous pouvons améliorer `CS-SPACE` !
 
-## 🤝 Contributing
+## 🤝 Contribuant
 
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+Tout d'abord, merci d'avoir pris le temps de contribuer ! Les contributions sont ce qui fait de la communauté open-source un endroit incroyable pour apprendre, inspirer et créer. Toutes les contributions que vous apportez profiteront à tous les autres et sont grandement appréciées.
 
-Please read [our contribution guidelines ](../CONTRIBUTING.md) for details on our [code of conduct](../CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+Veuillez lire [nos directives de contribution](../CONTRIBUTING.md) pour plus de détails sur notre [code de conduite](../CODE_OF_CONDUCT.md) et le processus pour nous soumettre des pull requests.
 
-## Contributors ✨
+## Contributeurs ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Merci à ces personnes formidables ([emoji key](https://allcontributors.org/docs/en/emoji-key)) :
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Ne pas supprimer ni modifier cette section -->
+<!-- plus joli-ignore-start -->
 <!-- markdownlint-disable -->
 
 <table>
@@ -83,16 +83,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+<!-- plus joli-ignore-end -->
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<!-- LISTE-TOUS-CONTRIBUTEURS : FIN -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Ce projet respecte la spécification [all-contributors](https://github.com/all-contributors/all-contributors). Les contributions de toute nature sont les bienvenues !
 
-## Versioning
+## Gestion des versions
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/CS-Space/tags).
+Nous utilisons [SemVer](https://semver.org/) pour la gestion des versions. Pour les versions disponibles, consultez les [tags sur ce référentiel](https://github.com/Fire-Oceann/CS-Space/tags).
 
-## License
+## Licence
 
-This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](../LICENSE). file for details
+Ce projet est sous licence [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) - voir la [LICENCE](../LICENSE). fichier pour plus de détails
