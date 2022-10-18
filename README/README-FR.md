@@ -60,9 +60,9 @@ Ensemble , nous pouvons améliorer `CS-SPACE`!
 
 ## 🤝 Contribution
 
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+Tout d'abord, merci d'avoir pris le temps de contribuer ! Les contributions sont ce qui fait de la communauté open-source un endroit incroyable pour apprendre, inspirer et créer. Toutes les contributions que vous faites profiteront à tous les autres et sont grandement appréciées.
 
-Veuillez lire [our contribution guidelines ](../CONTRIBUTING.md) pour plus de détails sur notre [code de conduite](../CODE_OF_CONDUCT.md), et le processus pour nous soumettre des pull requests
+Veuillez lire [directive de contribution ](../CONTRIBUTING.md) pour plus de détails sur notre [code de conduite](../CODE_OF_CONDUCT.md), et le processus pour nous soumettre des pull requests
 
 ## Contributeurs ✨
 
