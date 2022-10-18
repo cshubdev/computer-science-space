@@ -1,18 +1,18 @@
 <h1 align="center">
-  <a href="https://cs-space.vercel.app"><img src="../static/img/slash-introducing.png" alt="Computer Science  - Space"></a>
+  <a href="https://cs-space.vercel.app"><img src="../static/img/slash-introducing.png" alt="Informatik - Weltraum"></a>
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Melde einen technischen Fehler</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Fordern Sie eine Funktion an</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Stelle eine Frage</a>
 </h3>
 
 <div align="center">
 <br />
-<a herf="../LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Fire-Oceann/BB-TR-Kaynak?style=for-the-badge"/></a>
+<a herf="./LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/Fire-Oceann/BB-TR-Kaynak?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 <a href="https://img.shields.io/badge/all_contributors-0-orange.svg?style=for-the-badge"><img alt="All Contributors" src="https://img.shields.io/badge/all_contributors-5-orange.svg?style=for-the-badge"/></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
@@ -24,22 +24,22 @@
 
 </div>
 
-<kbd>[<img title="Türkçe" alt="Türkçe" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](./README-TR.md)</kbd>
-<kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](./README-FR.md)</kbd>
-<kbd>[<img title="Deutsch" alt="Deutsch" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](./README-DE.md)</kbd>
-<kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](./README-RU.md)</kbd>
-<kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](./README-IT.md)</kbd>
+<kbd>[<img title="Türkçe" alt="Türkçe" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/tr.svg" width="22">](README/README-TR.md)</kbd>
+<kbd>[<img title="Française" alt="Française" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/fr.svg" width="22">](README/README-FR.md)</kbd>
+<kbd>[<img title="Deutsch" alt="Deutsch" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/de.svg" width="22">](README/README-DE.md)</kbd>
+<kbd>[<img title="Русский язык" alt="Русский язык" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/ru.svg" width="22">](README/README-RU.md)</kbd>
+<kbd>[<img title="Italiano" alt="Italiano" src="https://cdn.staticaly.com/gh/hjnilsson/country-flags/master/svg/it.svg" width="22">](README/README-IT.md)</kbd>
 
-> A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles.
+>Ein Informatik-Portal für Enthusiasten. Es enthält gut geschriebene, gut durchdachte und gut erklärte Informatik- und Programmierartikel.
 
-## Prerequisites
+## Voraussetzungen
 
-Make sure you have installed all of the following prerequisites on your development machine:
+Stellen Sie sicher, dass Sie alle folgenden Voraussetzungen auf Ihrem Entwicklungscomputer installiert haben:
 
 - Git - [Download & Install Git](https://git-scm.com/downloads). OSX and Linux machines typically have this already installed.
 - Node.js - [Download & Install](https://nodejs.org/en/download/) Node.js and the npm package manager. If you encounter any problems, you can also use this [GitHub Gist](https://gist.github.com/isaacs/579814) to install Node.js.
 
-## Installation & Setup
+## Installation & Einrichtung
 
 ```bash
 git clone https://github.com/Fire-Oceann/CS-Space.git
@@ -48,25 +48,25 @@ npm install
 npm start
 ```
 
-## Project assistance
+## Projektassistenz
 
-If you want to say thank you or/and support active development of `CS-SPACE`:
+Wenn Sie Danke sagen oder/und die aktive Weiterentwicklung von `CS-SPACE` unterstützen möchten:
 
-- Add a ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) to the project.
-- Tweet about the `CS-SPACE`.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your personal blog.
+- Füge ein ⭐ hinzu [GitHub Star](https://github.com/Fire-Oceann/CS-Space) to the project.
+- Twittern Sie über den `CS-SPACE`.
+- Schreiben Sie interessante Artikel über das Projekt auf [Dev.to](https://dev.to/), [Medium](https://medium.com/) oder Ihrem persönlichen Blog.
 
-Together, we can make `CS-SPACE` better!
+Gemeinsam können wir `CS-SPACE` besser machen!
 
-## 🤝 Contributing
+## 🤝 Beitragen
 
-First off, thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody else and are greatly appreciated.
+Zunächst einmal vielen Dank, dass Sie sich die Zeit genommen haben, einen Beitrag zu leisten! Beiträge machen die Open-Source-Community zu einem so großartigen Ort zum Lernen, Inspirieren und Schaffen. Alle Beiträge, die Sie leisten, kommen allen anderen zugute und werden sehr geschätzt.
 
-Please read [our contribution guidelines ](../CONTRIBUTING.md) for details on our [code of conduct](../CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+Bitte lesen Sie [unsere Beitragsrichtlinien](CONTRIBUTING.md) Einzelheiten zu unserem [Verhaltenskodex](CODE_OF_CONDUCT.md), und dem Verfahren zum Einreichen von Pull-Requests an uns.
 
-## Contributors ✨
+## Mitwirkende ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Dank geht an diese wunderbaren Menschen([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -87,12 +87,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Dieses Projekt folgt den [all-contributors](https://github.com/all-contributors/all-contributors) spezifikation. Beiträge jeglicher Art willkommen!
 
-## Versioning
+## Versionierung
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/CS-Space/tags).
+Wir verwenden [SemVer](https://semver.org/) zur Versionierung. Die verfügbaren Versionen finden Sie in den [Tags in diesem Repository](https://github.com/Fire-Oceann/CS-Space/tags).
 
-## License
+## Lizenz
 
-This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](../LICENSE). file for details
+Dieses Projekt ist lizenziert unter [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) Lizenz - siehe [LICENSE](./LICENSE) datei für Details
