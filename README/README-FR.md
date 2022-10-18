@@ -50,7 +50,6 @@ npm start
 
 ## Aide au projet
 
-If you want to say thank you or/and support active development of `CS-SPACE`:
 Si vous voulez remercier ou/et soutenir le développement de `CS-SPACE`
 
 - Ajouter un ⭐️ [GitHub Star](https://github.com/Fire-Oceann/CS-Space) sur le projet.
@@ -88,12 +87,12 @@ Merci à ces  personnes formidables([emoji key](https://allcontributors.org/docs
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Ce projet suit le [all-contributors](https://github.com/all-contributors/all-contributors) spécification. Tout types de contributions seront le bienvenu.
 
 ## Versioning
 
-We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Fire-Oceann/CS-Space/tags).
+Nous utilisons [SemVer](https://semver.org/) pour le versioning.Pour les verions disponibles, vous pouvez voir ici [tags on this repository](https://github.com/Fire-Oceann/CS-Space/tags).
 
-## License
+## Licence
 
-This project is licensed under the [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) License - see the [LICENSE](../LICENSE). file for details
+Ce projet est sous la [CS-SPACE](https://github.com/Fire-Oceann/CS-Space) Licence - see the [LICENSE](../LICENSE). fichier pour plus de détails
