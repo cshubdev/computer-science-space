@@ -3,11 +3,11 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Report a Bug</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=bug&template=bug_report.yml&title=">Signaler un bug</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Request a Feature</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/issues/new?assignees=&labels=feature+request&template=feature_request.yml&title=">Demander une fonctionnalité</a>
   <span> · </span>
-  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Ask a Question</a>
+  <a href="https://github.com/Fire-Oceann/CS-Space/discussions">Poser une question</a>
 </h3>
 
 <div align="center">
@@ -32,7 +32,7 @@
 
 > Un portail informatique pour les passionnés. Il contient des articles d'informatique et de programmation bien écrits, bien pensés et bien expliqués.
 
-## Conditions préalables
+## Prérequis
 
 Assurez-vous d'avoir installé tous les prérequis suivants sur votre ordinateur de développement :
 
@@ -41,11 +41,11 @@ Assurez-vous d'avoir installé tous les prérequis suivants sur votre ordinateur
 
 ## Installation et configuration
 
-```bash
-git clone https://github.com/Fire-Oceann/CS-Space.git
-cd CS-Espace
-installation npm
-début npm
+ ```bash
+ git clone https://github.com/Fire-Oceann/CS-Space.git
+cd CS-Space
+npm install
+npm start
 ```
 
 ## Accompagnement de projet
