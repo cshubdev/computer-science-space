@@ -11,7 +11,7 @@ const discordURL = 'https://discord.gg/bYWVWrDkCU'
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Computer Science Space',
-  tagline: 'A Computer Science portal for enthusiasts. It contains well-written, well-thought-out and well-explained computer science and programming articles. ',
+  tagline: 'Meraklılar için bir Bilgisayar Bilimi portalı. İyi yazılmış, iyi düşünülmüş ve iyi açıklanmış bilgisayar bilimi ve programlama makaleleri içerir.',
   url: 'https://cs-space.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -28,8 +28,8 @@ const config = {
   // to replace "en" with "zh-Hans".
 
   i18n: {
-		defaultLocale: 'en',
-		locales: [ 'en', 'tr', 'fr', 'de', 'ru', 'it']
+		defaultLocale: 'tr',
+		locales: ['tr']
 	},
 
   presets: [
@@ -119,12 +119,11 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/algorithms', label: 'Algorithms', position: 'left' },
-          { to: '/data-structure', label: 'Data Structures', position: 'left' },
+          { to: '/algorithms', label: 'Algoritmalar', position: 'left' },
+          { to: '/data-structure', label: 'Veri Yapıları', position: 'left' },
           { to: '/git', label: 'GIT', position: 'left' },
-          { href: '/docs', label: '❤️ Contributing', position: 'right' },
-          {to: '/blog', label: 'Blog', position: 'right'},
-          { type: 'localeDropdown', position: 'right' },
+          { href: '/docs', label: '❤️ Katkıda Bulunmak', position: 'right' },
+          {to: '/blog', label: 'Makaleler', position: 'right'},
           {
             href: githubRepoURL,
             position: 'right',
@@ -145,14 +144,14 @@ const config = {
           {
             title: "Docs",
             items: [
-              { label: "Documentation",  to: "/docs" },
-              { label: "Algorithms",  to: "/algorithms" },
-              { label: "Data Structures",  to: "/data-structure" },
+              { label: "Dokümantasyon",  to: "/docs" },
+              { label: "Algoritmalar",  to: "/algorithms" },
+              { label: "Veri Yapıları",  to: "/data-structure" },
               { label: "GIT",  to: "/git" },
             ],
           },
           {
-            title: 'Community',
+            title: 'Topluluk',
             items: [
               {
                 label: 'Discord',
@@ -165,10 +164,10 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Daha Fazlası',
             items: [
               {
-                label: 'Blog',
+                label: 'Makaleler',
                 to: '/blog',
               },
               {

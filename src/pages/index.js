@@ -10,15 +10,12 @@ import Community from './components/Community';
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`${siteConfig.title}`} description={`${siteConfig.tagline}`}>
       <div className={styles.BG}>
         <main className={styles.Container}>
           <HomepageHeader />
           <Lessons />
-          <DiscordCard URL="https:discord.gg/bb-tr-kaynak" />
+          <DiscordCard URL="https://discord.gg/bYWVWrDkCU" />
           <Community />
         </main>
       </div>
