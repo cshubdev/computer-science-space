@@ -16,7 +16,105 @@ import TabItem from '@theme/TabItem';
 You can delete (NoContentHere)
 -->
 
-<NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/34" />
+Bir probleme bir çözüm yazıldığında o çözümün uygulanması için bir miktar bellek gerekir.
+
+<b>Space Complexity (Alan Karmaşıklığı)</b> terimi bir çok yerde Auxiliary Space
+olarak kullanılmaktadır. Bu yanlış bir kullanımdır. Aşağıda Auxiliary Space ve Space
+Complexity terimlerinin ne olduğu ile ilgili bilgi verilmiştir:
+
+<br />
+<br />
+
+<i>
+  <b>Auxiliary Space</b>
+</i> bir algoritma tarafından kullanılan ekstra alan veya geçici alandır.
+
+<br />
+<br />
+
+<i>
+  <b>Space Complexity</b>
+</i> girdi boyutuna göre algoritma tarafından tutulan toplam alandır. Space complexity,
+auxiliary space’i ve input tarafından kullanılan alanı içerir.
+
+<br />
+<br />
+<b>Space Complexity = Auxiliary Space + Input space</b>
+
+<br />
+<br />
+
+<u>Örneğin;</u>
+
+<br />
+Standart bir sorting algoritmasını alan bazında karşılaştırmak istersek Auxiliary
+Space daha iyi bir kriter olacaktır.
+<br />
+<br />
+<ul>
+  <li>Merge Sort algoritması O(n) auxiliary space kullanır.</li>
+  <li>
+    Insertion sort ve Heap Sort algoritmaları O(1) auxiliary space kullanır.
+  </li>
+</ul>
+
+Bütün bu sorting algoritmalarının space complexity’si O(n)’dir.
+
+Space complexity, time complexity’e paralel bir kavramdır. Eğer n boyutunda bir array oluşturma istersek bunun space complexity’si O(n) olacaktır. İki boyutlu bir n\*n uzunluğunda array oluşturursak bunun space complexity’si O(n^2) olacaktır.
+
+Ayrıca recursive fonksiyonlar da call stack’de alan olarak sayılır.
+
+```jsx
+int add (int n){
+    if (n <= 0){
+        return 0;
+    }
+    return n + add (n-1);
+}
+```
+
+```
+1.  add(4)
+2.    -> add(3)
+3.      -> add(2)
+4.        -> add(1)
+5.          -> add(0)
+```
+
+Bu çağrıların her biri call stack’e eklenir ve gerçek hafızada yer kaplar.
+Böylece recursive fonksiyonun space complexity’si O(n)’dir.
+
+:::note Not
+Space complexity’nin programlama dili, derleyici veya hatta algoritmayı çalıştıran makine gibi çeşitli şeylere bağlı olduğunu belirtmek gerekir.
+:::
+
+## Space Complexity’i Hesaplamak
+
+```jsx
+# Doğal sayıların toplamı
+
+int sum(int n)
+    {
+     int i,sum=0;
+     for(i=n;i>=1;i--)
+     sum=sum+i
+     return sum;
+    }
+```
+
+Bu örnekte giriş değeri olan n O(1) space complexity’e sahip bir sabit değişkendir. Sabit değişkenler hafızada O(1) alan kaplar. Fonksiyonun auxiliary space'i O(1)’dir. Çünkü i ve sum değişkenleri sabittir. Sonuç olarak bu örneğin space complexity’si O(1)’dir.
+
+```jsx
+function sum_of_numbers(arr[],N){
+    sum=0
+    for(i = 0 to N){
+      sum=sum+arr[i]
+    }
+    print(sum)
+}
+```
+
+Yukarıdaki örnek dizideki değerlerin toplamını bulmayla ilgilidir. Oluşturulan fonksiyona n boyutunda bir dizi geçirilmiştir. for döngüsü 0’dan N’e kadardır. İçerideki işlemde sum’a sum’un kendisinin dizideki mevcut elemanla toplamı atanmıştır (sum = sum + arr[i]). sum değişkeni sabittir ama for döngüsü dizinin boyutu kadar sürdüğü için space complexity O(n)’dir.
 
 <!--- Content - End --->
 
@@ -30,21 +128,27 @@ You can delete (NoContentHere)
   <TabItem value="youtube-videos" label="Youtube videoları" default>
     <ul>
       <li>
-        <a href="https://youtube.com">Video Title</a>
+        <a href="https://www.youtube.com/watch?v=3bhBo9YCTpo">
+          Algoritma Analizi ve Big-O (Algoritma Analizi 1)
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="blog-article" label="Blog & Makale">
     <ul>
       <li>
-        <a href="https://medium.com">Blog Title</a>
+        <a href="https://birhankarahasan.com/algoritma-analizi-nedir-zaman-karmasikligi-big-o-gosterimi">
+          Algoritma Analizi Nedir? Zaman Karmaşıklığı ve Big O Notasyonu
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="questions" label="Sorular">
     <ul>
       <li>
-        <a href="https://hackerrank.com">Question Title</a>
+        <a href="https://www.manishsundriyal.com/time-space-complexity-practice-problems-1">
+          Practice Problems | Time & Space Complexity
+        </a>
       </li>
     </ul>
   </TabItem>
