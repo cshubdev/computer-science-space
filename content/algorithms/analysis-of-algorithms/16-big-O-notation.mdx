@@ -6,19 +6,87 @@ sidebar_label: Big O Notation
 
 <!--- Import Component Here --->
 
-import NoContentHere from '@site/src/components/MDX/NoContentHere';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <!--- Content - Start --->
 
-<!---
-You can delete (NoContentHere)
--->
-
-<NoContentHere URL="https://github.com/Fire-Oceann/BB-TR-Kaynak/issues/34" />
-
 <!--- Content - End --->
+
+**Big-O**, bir algoritma verminin input girişinin boyutuna bağlı olarak worst-case senaryado nasıl olduğunu gösteren bir matematiksel notasyon standardıdır. Bir algoritmanın verimini ölçmek için şunlara ihtiyacımız olur:
+
+- **Time Complexity:** Tamamen çalışmak için ne kadar zaman alır?
+- [Space Complexity](https://cs-space.vercel.app/algorithms/analysis-of-algorithms/space-complexity): Bu süreçte ne kadar ekstra alan gerekir?
+
+Big-O notasyonu bir algoritmanın worst-case senaryoda giriş boyutu büyüdükçe ne kadar zaman ya da alan gerektirdiğini göstermek için üst sınırı (upper bound) yakalar. Bu genellikle şu şekilde yazılır:
+
+    f(n) = O(inputSize)
+
+## Complexity Nasıl Hesaplanır?
+
+Time complexity iki faktör dikkate alınarak belirlenir. Giriş boyutu (size) ve algoritmanın çözümü. Aşağıda complexity’i çözmek için genel yol açıklanlanmıştır:
+
+- Koddaki bütün temel işlemleri listele
+- Her bir işlemin kaç kez yürütüldüğünü say
+- n cinsinden bir denklem elde etmek için tüm sayıları toplayın
+
+:::note Örnek
+Aşadağıdaki kodu inceleyelim ve eğer giriş boyutu n’e eşitse complexity’i nasıl hesaplayacağımıza bakalım:
+:::
+
+```jsx
+#include <iostream>
+using namespace std;
+
+int main() {
+  int sum = 0;
+  for (int i=0;i<5;i++){
+    sum = sum+i;
+  }
+  cout << "Sum = " << sum;
+  return 0;
+}
+```
+
+| İşlemler                | Yürütme Sayısı |
+| ----------------------- | -------------- |
+| int sum = 0             | 1              |
+| for (int i=0;i<5;i++)   | 6              |
+| cout << "Sum = " << sum | 1              |
+| return 0                | 1              |
+
+**Hesaplama**
+
+- 1+6+5+1+1
+
+Bu notasyonu giriş boyutu (n) cinsinden genelleştirmek şu ifadeyi oluşturur:
+
+▶️ 1+(n+1) + n + 1+1
+
+Yukarıdaki ifadeden sonra basitleşitrmek için sonuç olarak time complexity şu şekilde olacaktır:
+
+▶️ 2n +4
+
+### Bir Algrotimanın Big-O Notasyon’unu Nasıl Tahmin Ederiz?
+
+Big-O notasyonu bulmak için şu adımları dikkate alırız:
+
+- n’in önündeki sabitleri at
+- Düşük dereceli terimleri görmezden gel (2n + 4n => 4n)
+
+Yukarıdaki iki adımdan sonra big-o notasyonu hesaplayabiliriz:
+
+    => 2n+4 => n+4 => n  => O(n)
+
+İşte algoritmanızın verimlilik açısından nerede olduğunu görmek ve Big O zaman karmaşıklığını görselleştirmenize yardımcı olmak için kaba bir grafik:
+
+<div style={{backgroundColor:"white"}}>
+<Image copyRight="Fire Ocean">
+
+![Big-O Notation](../images/16-big-O-notation.svg)
+
+</Image>
+</div>
 
 <!--- Links Source - Start --->
 
@@ -30,21 +98,52 @@ You can delete (NoContentHere)
   <TabItem value="youtube-videos" label="Youtube videoları" default>
     <ul>
       <li>
-        <a href="https://youtube.com">Video Title</a>
+        <a href="https://www.youtube.com/watch?v=8MwDRZs1IBU&t=494s">
+          Big O Notasyonu - Örneklerle - Time Complexity
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=AYE-upbZBW4">
+          Nedir Bu İyi Algoritma ve Büyük O Notasyonu ?
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=T_jDXVF7qyw">
+          Algoritmalar ve Big O Notation : Konuğumuz Cihangir Özmüş
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=bwqGkH2jaTE">
+          Big O Notasyonu - Algoritmalar
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=E3UhAUQw2M0">
+          Algoritma ve Veri Yapıları | Big-O Notasyonu | Running Time
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="blog-article" label="Blog & Makale">
     <ul>
       <li>
-        <a href="https://medium.com">Blog Title</a>
+        <a href="https://medium.com/kodcular/nedir-bu-big-o-notation-b8b9f1416d30">
+          Nedir Bu “Big O Notation”?
+        </a>
       </li>
     </ul>
   </TabItem>
   <TabItem value="questions" label="Sorular">
     <ul>
       <li>
-        <a href="https://hackerrank.com">Question Title</a>
+        <a href="https://www.proprofs.com/quiz-school/story.php?title=bino-quest">
+          Big O Notation Quiz
+        </a>
+      </li>
+      <li>
+        <a href="https://codistwa.com/games/big-o-notation-and-complexity-time">
+          Practice Big O Notation And Complexity Time - Quiz
+        </a>
       </li>
     </ul>
   </TabItem>
