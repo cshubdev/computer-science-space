@@ -2,11 +2,6 @@
 Thank you for creating a Pull Request ❤️!
 If your PR fixes an open issue, use `Closes #23` to link your PR with the issue. #23 stands for the issue number you are fixing -->
 
-## Fixes Issue
-
-<!-- Remove this section if not applicable -->
-<!-- Example: Closes #31 -->
-
 Closes #
 
 ## 🚀 Changes proposed
