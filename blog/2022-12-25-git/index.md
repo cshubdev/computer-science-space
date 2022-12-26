@@ -1,5 +1,5 @@
 ---
-slug: Git-Nedir?-Temelden-İleri-Seviyeye
+slug: git-nedir-temelden-ileri-seviyeye
 title: Git Nedir? Temelden İleri Seviyeye
 authors: [beyzanurtekinli]
 tags: [bilgisayar-bilimi, git]
