@@ -4,7 +4,7 @@
 
 Fire-Ocean Bilgisayar Bilimi Türkçe Kaynak'da herhangi bir güvenlik açığı varsa , bunları bildirmekten çekinmeyin.
 
-1. [Özel iletişim adreslerinden](https://bb-tr-kaynak.netlify.app/docs#-i%CC%87leti%C5%9Fim-kanallar%C4%B1) herhangi birini kullanın .
+1. [Özel iletişim adreslerinden](https://cs-space.vercel.app/docs#-i%CC%87leti%C5%9Fim-kanallar%C4%B1) herhangi birini kullanın .
 
 2. Güvenlik açığını tanımlayın.
 
