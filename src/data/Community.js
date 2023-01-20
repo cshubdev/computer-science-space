@@ -2,7 +2,7 @@ const communityData = [
   {
     title: 'Twitter',
     icon: 'Twitter',
-    url: 'https://twitter.com/ziarparvaiz_01',
+    url: 'https://twitter.com/ziarparvaiz',
     Description: 'Duyurular, ipuçları ve genel bilgiler için.',
   },
   {
